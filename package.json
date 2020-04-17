@@ -1,0 +1,77 @@
+{
+  "name": "@vgmqt/gulp-tasker",
+  "version": "2.0.3",
+  "description": "An easy editable gulp build with a flexible and convenient choice of tasks to run",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VGMQT/gulp-tasker.git"
+  },
+  "keywords": [
+    "gulp",
+    "task runner",
+    "builder"
+  ],
+  "author": "Vlad Gerasimovich <vlad.gerasimovich.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": "https://github.com/VGMQT/gulp-tasker/issues",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.3",
+    "browser-sync": "^2.26.7",
+    "child_process": "^1.0.2",
+    "del": "~5.1.0",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "fs": "^0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "~7.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cheerio": "~1.0.0",
+    "gulp-concat": "~2.6.1",
+    "gulp-concat-css": "~3.1.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-load-plugins": "~2.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-notify": "~3.2.0",
+    "gulp-pug": "~4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "~1.0.0",
+    "gulp-sass": "~4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "~2.6.5",
+    "gulp-svg-sprite": "~1.5.0",
+    "gulp-svgmin": "~2.2.0",
+    "gulp.spritesmith": "^6.10.1",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.5.0",
+    "merge-stream": "^2.0.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^2.0.1",
+    "stylelint": "^12.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-order": "^3.0.1"
+  },
+  "dependencies": {
+    "jquery": "~3.4.1",
+    "normalize.css": "~8.0.1"
+  },
+  "lint-staged": {
+    "dev/js/**/*.js": [
+      "pretty-quick --pattern './dev/js/**/*.js'",
+      "eslint './dev/js/**/*.js' --fix"
+    ],
+    "dev/**/*.{scss,sass,css}": [
+      "stylelint './dev/styles/**/*.{scss,sass,css}' --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && gulp build && git add ."
+    }
+  }
+}
