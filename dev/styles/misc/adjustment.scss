@@ -1,5 +1,5 @@
 // Local variables
-$container_width: 1550px;
+$container_width: 1600px;
 $container_padding_sides: 10px;
 //--
 
@@ -8,7 +8,7 @@ $container_padding_sides: 10px;
 }
 
 ::selection {
-  color: $main_color;
+  color: $color_main;
   background-color: $accent_color;
 }
 
@@ -37,6 +37,7 @@ body {
 
 .container {
   max-width: $container_width;
+  width: 100%;
   padding: 0 $container_padding_sides;
   margin: 0 auto;
 }

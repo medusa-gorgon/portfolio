@@ -1,10 +1,16 @@
-$font_name: 'Open Sans';
-$font-path_name: 'OpenSans';
+$font_name: 'Bertha';
+$font-path_name: 'Bertha';
 
 // Static colors
 $white: #ffffff;
 
 // Project colors
-$main_color: #f44336;
+$color_main: #76b8b8;
+$color_about: #ded9c9;
+$color_portfolio: #e68d6b;
+$color_blog: #e0dddb;
+$color_contact: #4b5056;
+$color_text_light: #f9ecdb;
+$color_text_dark: #373737;
 $accent_color: $white;
-$box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+// $box-shadow: 0 1px 5px rgba(0, 0, 0, .3);

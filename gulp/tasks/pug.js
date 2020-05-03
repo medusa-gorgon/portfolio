@@ -4,7 +4,7 @@ module.exports = () => {
       .src(`${$.config.dev}/pug/pages/*.pug`)
       .pipe(
         $.gp.pug({
-          // locals: JSON.parse($.fs.readFileSync('content.json', 'utf8')),
+          locals: JSON.parse($.fs.readFileSync('content.json', 'utf8')),
           pretty: '\t',
         })
       )

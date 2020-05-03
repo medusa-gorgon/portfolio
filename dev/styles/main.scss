@@ -3,7 +3,9 @@
 @import 'misc/fonts';
 @import 'misc/mixins';
 @import 'misc/adjustment';
-@import 'misc/sprite';
+
+// Elements
+@import 'elements/**/*';
 
 // Modules
 @import 'modules/**/*';

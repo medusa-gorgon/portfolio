@@ -35,12 +35,12 @@
   font-weight: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: '#{$font_name} Light Italic';
   src: url('../../fonts/#{$font-path_name}-LightItalic.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
-}
+} */
 
 @font-face {
   font-family: '#{$font_name} Regular';
@@ -49,7 +49,7 @@
   font-weight: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: '#{$font_name} Regular Italic';
   src:
     url('../../fonts/#{$font-path_name}-RegularItalic.ttf')
@@ -58,7 +58,7 @@
   font-weight: normal;
 }
 
-/*
+
 @font-face {
   font-family: '#{$font_name} Medium';
   src: url('../../fonts/#{$font-path_name}-Medium.ttf') format('truetype');
@@ -72,7 +72,7 @@
   font-style: normal;
   font-weight: normal;
 }
-*/
+
 
 @font-face {
   font-family: '#{$font_name} Semi Bold';
@@ -88,7 +88,7 @@
     format('truetype');
   font-style: normal;
   font-weight: normal;
-}
+} */
 
 @font-face {
   font-family: '#{$font_name} Bold';
@@ -98,6 +98,20 @@
 }
 
 @font-face {
+  font-family: '#{$font_name} Italic';
+  src: url('../../fonts/#{$font-path_name}-Italic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} ShadowLine';
+  src: url('../../fonts/#{$font-path_name}-ShadowLine.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* @font-face {
   font-family: '#{$font_name} Bold Italic';
   src: url('../../fonts/#{$font-path_name}-BoldItalic.ttf') format('truetype');
   font-style: normal;
@@ -120,7 +134,7 @@
   font-weight: normal;
 }
 
-/*
+
 @font-face {
   font-family: '#{$font_name} Black';
   src: url('../../fonts/#{$font-path_name}-Black.ttf') format('truetype');
@@ -133,5 +147,4 @@
   src: url('../../fonts/#{$font-path_name}-BlackItalic.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
-}
-*/
+} */

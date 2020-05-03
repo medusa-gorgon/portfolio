@@ -1,0 +1,110 @@
+.header {
+  position: relative;
+  // height: 130px;
+  box-shadow: 0 4px 2px -2px rgba($color: #a7a6a6, $alpha: 1);
+  background-color: $color_main;
+
+  &::after {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 32px;
+    margin-top: -16px;
+    border-top: 1px dashed rgba($color: #578b8a, $alpha: .7);
+    border-bottom: 1px dashed rgba($color: #578b8a, $alpha: .7);
+    content: '';
+  }
+}
+
+.logo {
+  @include center();
+  position: absolute;
+  z-index: 4;
+  width: 150px;
+  height: 150px;
+
+  &__letter {
+    @include center();
+    position: absolute;
+    z-index: 4;
+    top: 64%;
+    left: 52%;
+    font-family: '#{$font_name} ShadowLine';
+    font-size: 100px;
+    line-height: 64px;
+    color: $color_text_light;
+  }
+
+  &__img {
+    // @include center();
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%);
+  }
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 70px 0 70px;
+  margin: 0 -10px;
+
+  &__link {
+    // width: 25%;
+    padding: 30px 10px;
+    // padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 50px;
+    color: $color_text_light;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      text-decoration-thickness: 1px;
+    }
+
+    // &:nth-child(2n) {
+    //   padding-right: 75px;
+    // }
+
+    // &:nth-child(3n) {
+    //   padding-left: 75px;
+    //   text-align: right;
+    // }
+
+    // &:nth-child(4n) {
+    //   padding-right: 10px;
+    // }
+
+    // &:nth-child(6n) {
+    //   padding-left: 10px;
+    // }
+
+    &:nth-child(2n) {
+      padding-right: 180px;
+      flex-basis: 40%;
+    }
+
+    &:nth-child(4n) {
+      padding-right: 0px;
+      flex-basis: auto;
+    }
+
+    /* &:nth-child(3n) {
+      // flex-basis: 25%;
+    }
+
+    &:nth-child(6n) {
+      // padding-left: 10px;
+      flex-basis: auto;
+    } */
+  }
+}

@@ -1,19 +1,17 @@
 {
-  "name": "@vgmqt/gulp-tasker",
-  "version": "2.0.3",
-  "description": "An easy editable gulp build with a flexible and convenient choice of tasks to run",
+  "name": "@mg-bizarre/portfolio",
+  "version": "0.1.0",
+  "description": "Portfolio",
   "repository": {
     "type": "git",
-    "url": "https://github.com/VGMQT/gulp-tasker.git"
+    "url": "https://github.com/mg-bizarre/portfolio.git"
   },
   "keywords": [
-    "gulp",
-    "task runner",
-    "builder"
+    "portfolio"
   ],
-  "author": "Vlad Gerasimovich <vlad.gerasimovich.dev@gmail.com>",
+  "author": "Masha Shevchuk <mg.bizarre@gmail.com>",
   "license": "MIT",
-  "bugs": "https://github.com/VGMQT/gulp-tasker/issues",
+  "bugs": "https://github.com/mg-bizarre/portfolio/issues",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
@@ -57,7 +55,6 @@
     "stylelint-order": "^3.0.1"
   },
   "dependencies": {
-    "jquery": "~3.4.1",
     "normalize.css": "~8.0.1"
   },
   "lint-staged": {
