@@ -1,16 +1,21 @@
+// Font variables
 $font_name: 'Bertha';
 $font-path_name: 'Bertha';
 
-// Static colors
-$white: #ffffff;
-
 // Project colors
 $color_main: #76b8b8;
-$color_about: #ded9c9;
-$color_portfolio: #e68d6b;
-$color_blog: #e0dddb;
-$color_contact: #4b5056;
+$color_accent: #ffffff;
+
+// Sections background colors
+$color_bg_about: #ded9c9;
+$color_bg_portfolio: #e68d6b;
+$color_bg_blog: #e0dddb;
+$color_bg_contact: #4b5056;
+
+// Text colors
 $color_text_light: #f9ecdb;
 $color_text_dark: #373737;
-$accent_color: $white;
-// $box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+
+// Elements colors
+$color_shadow: #a7a6a6;
+$color_stitch: #578b8a;
