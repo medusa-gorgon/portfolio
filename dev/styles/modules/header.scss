@@ -18,12 +18,10 @@
 }
 
 .logo {
-  position: absolute;
+  @include center(x);
   z-index: 10;
   top: 10%;
-  left: 50%;
   max-width: 150px;
-  transform: translate(-50%, 0);
 
   &__img {
     @include img();
@@ -55,7 +53,8 @@
     color: $color_text_light;
     transition: all .3s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color_accent;
     }
 
