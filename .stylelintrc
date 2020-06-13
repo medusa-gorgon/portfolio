@@ -1,23 +1,31 @@
 {
-  "extends": ["stylelint-config-standard"],
-  "plugins": ["stylelint-order"],
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
   "rules": {
-    "at-rule-empty-line-before": ["always", {
-      "except": [
-        "blockless-after-blockless",
-        "first-nested"
-      ],
-      "ignore": [
-        "after-comment"
-      ]
-    }],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "blockless-after-blockless",
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
+      }
+    ],
     "at-rule-no-unknown": null,
     "color-hex-length": "long",
+    "declaration-colon-newline-after": null,
     "declaration-empty-line-before": "never",
     "font-family-no-missing-generic-family-keyword": null,
     "length-zero-no-unit": null,
     "no-descending-specificity": null,
-    "number-leading-zero": "never",
+    "number-leading-zero": "always",
     "selector-pseudo-class-no-unknown": null,
     "order/properties-order": [
       "position",
@@ -26,7 +34,6 @@
       "right",
       "bottom",
       "left",
-
       "display",
       "visibility",
       "opacity",
@@ -58,7 +65,6 @@
       "margin-right",
       "margin-bottom",
       "margin-left",
-
       "border",
       "border-top",
       "border-right",
@@ -74,7 +80,6 @@
       "outline-style",
       "outline-color",
       "outline-offset",
-
       "text-align",
       "text-justify",
       "text-decoration",
@@ -92,7 +97,6 @@
       "font-weight",
       "line-height",
       "letter-spacing",
-
       "color",
       "background",
       "background-image",
@@ -101,7 +105,6 @@
       "background-position",
       "background-size",
       "background-attachment",
-
       "transform",
       "transform-style",
       "transform-origin",
@@ -119,7 +122,6 @@
       "transition-duration",
       "transition-timing-function",
       "transition-delay",
-
       "content",
       "cursor",
       "pointer-events",
@@ -149,9 +151,7 @@
         "parameter": "font",
         "hasBlock": false
       },
-
       "declarations",
-
       {
         "type": "rule",
         "selector": "&:hover"
@@ -176,7 +176,6 @@
         "type": "rule",
         "selector": "^&:out-of-range|^&:r(e(ad-(only|write)))"
       },
-
       {
         "type": "at-rule",
         "name": "include",
@@ -201,7 +200,6 @@
         "parameter": "retina",
         "hasBlock": true
       },
-
       {
         "type": "rule",
         "selector": "&::before"
@@ -214,7 +212,6 @@
         "type": "rule",
         "selector": "^&::\\w"
       },
-
       {
         "type": "rule",
         "selector": "^&:first-(child|of-type)"
@@ -231,7 +228,6 @@
         "type": "rule",
         "selector": "^&:o(nly-(child|of-type))"
       },
-
       {
         "type": "rule",
         "selector": "^&_[^_][\\w'-]+"

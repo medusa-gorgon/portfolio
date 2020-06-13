@@ -25,28 +25,6 @@
   }
 }
 
-// Breakpoints, Desktop-first
-
-/*
-@mixin mobile {
-  @media screen and (max-width: 767px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media screen and (max-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin laptop {
-  @media screen and (max-width: 1439px) {
-    @content;
-  }
-}
-*/
-
 // Actions
 @mixin center($axis: xy) {
   position: absolute;
@@ -72,6 +50,15 @@
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+// States
+@mixin haf {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
 }
 
 // Fonts

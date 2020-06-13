@@ -2,34 +2,28 @@
   "nav": ["About me", "Portfolio", "My blog", "Contact me"],
   "heroSlides": [
     {
-      "src": "images/slide1.jpg",
-      "alt": "road",
-      "desc": "Forest life"
+      "src": "images/hero/slider/slide1.jpg",
+      "alt": "Forest life"
     },
     {
-      "src": "images/slide2.jpg",
-      "alt": "building",
-      "desc": "City"
+      "src": "images/hero/slider/slide2.jpg",
+      "alt": "City"
     },
     {
-      "src": "images/slide3.jpg",
-      "alt": "flower",
-      "desc": "Yellow meadow"
+      "src": "images/hero/slider/slide3.jpg",
+      "alt": "Yellow meadow"
     },
     {
-      "src": "images/slide4.jpg",
-      "alt": "tea",
-      "desc": "Good morning"
+      "src": "images/hero/slider/slide4.jpg",
+      "alt": "Good morning"
     },
     {
-      "src": "images/slide5.jpg",
-      "alt": "dandelions",
-      "desc": "Dandelions"
+      "src": "images/hero/slider/slide5.jpg",
+      "alt": "Dandelions"
     },
     {
-      "src": "images/slide6.jpg",
-      "alt": "cornflowers",
-      "desc": "Cornflowers"
+      "src": "images/hero/slider/slide6.jpg",
+      "alt": "Cornflowers"
     }
   ]
 }

@@ -11,10 +11,9 @@
     font-size: 40px;
     line-height: 55px;
     color: $color_text_light;
-    transition: all .3s;
+    transition: all 0.3s;
 
-    &:hover,
-    &:focus {
+    @include haf {
       color: $color_accent;
     }
 

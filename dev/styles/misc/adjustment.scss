@@ -29,8 +29,9 @@ body {
   // Stick the footer with a dynamic height to the bottom of a page
   display: flex;
   flex-direction: column;
-  height: 100%;
   //-
+  overflow-x: hidden;
+  height: 100%;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
 }

@@ -1,10 +1,21 @@
-.hero
+section.section
+  .hero
     .container
-        .hero__title Retro
-        include ../elements/ribbon
+      .hero__wrapper
+        .hero__head
+          .hero__title M's Portfolio
+          include ../elements/ribbon
+          +ribbon
         .hero__swiper
-            include ../modules/swiper
+          .swiper-container
+            .swiper-wrapper
+              each slide in heroSlides
+                .swiper-slide
+                  .hero__slide
+                    .hero__slide-pic(style=`background-image:url('${slide.src}')`)= slide.alt
+                    .hero__slide-title= slide.alt
+            .hero__swiper-button.hero__swiper-button_prev
+            .hero__swiper-button.hero__swiper-button_next
         .hero__quote
-            p.hero__quote__txt "HELLO, I AM JOHN DOE
-            p.hero__quote__txt.hero__quote__txt_sm WELCOME TO RETRO, MY WONDERFUL THEME!"
-        
+          .hero__quote-text "Hello! I am M!
+          .hero__quote-text.hero__quote-text_sub Welcome to my Portfolio!"

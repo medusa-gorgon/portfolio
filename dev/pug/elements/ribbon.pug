@@ -1,14 +1,19 @@
-.ribbon
-    .ribbon__dot
-    .ribbon__dot
-    .ribbon__dot
-    .ribbon__dot
-    .ribbon__left
-    .ribbon__left-shadow 
-    .ribbon__text Old style portfolio
-    .ribbon__right-shadow
-    .ribbon__right
-    .ribbon__dot
-    .ribbon__dot
-    .ribbon__dot
-    .ribbon__dot
+mixin ribbon(text = 'Dive in')
+  .ribbon
+    .ribbon__dots
+      .ribbon__dots-wrapper
+        .ribbon__dot
+        .ribbon__dot
+        .ribbon__dot
+        .ribbon__dot
+    .ribbon__content
+      .ribbon__edge.ribbon__edge_left
+      .ribbon__main
+        .ribbon__text= text
+      .ribbon__edge.ribbon__edge_right
+    .ribbon__dots
+      .ribbon__dots-wrapper
+        .ribbon__dot
+        .ribbon__dot
+        .ribbon__dot
+        .ribbon__dot

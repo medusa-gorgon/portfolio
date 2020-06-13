@@ -1,77 +1,104 @@
-.section {
-  position: relative;
-
-  &::after {
-    $height: 32px;
-    position: absolute;
-    z-index: 4;
-    bottom: -($height / 2);
-    left: 0;
-    display: block;
-    width: 100%;
-    height: $height;
-    border-top: 1px dashed rgba($color_stitch, .7);
-    border-bottom: 1px dashed rgba($color_stitch, .7);
-    content: '';
-  }
-}
-
 .hero {
-  position: relative;
-  max-height: 100%;
-  padding-top: 80px;
-  background-color: $color_main;
+  background: url('/images/hero/hero_bg.png') center / cover no-repeat;
+
+  &__wrapper {
+    padding: 80px 0 50px;
+  }
+
+  &__head {
+    margin-bottom: 55px;
+  }
 
   &__swiper {
-    padding: 15px 15px 0px 15px;
-    background-color: $color_swiper;
+    &-button {
+      @include center(y);
+      z-index: 1;
+      overflow: hidden;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background-color: $color_secondary;
+      cursor: pointer;
+
+      @include haf {
+        background: url('/images/hero/hero_bg.png') center / auto no-repeat;
+      }
+
+      &::before {
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: url('/images/icons/arrowDark.png') center / contain
+          no-repeat;
+        content: '';
+      }
+
+      &_prev {
+        left: -50px;
+
+        &::before {
+          top: 50%;
+          left: 40px;
+          transform: rotate(90deg) translateX(-50%);
+        }
+      }
+
+      &_next {
+        right: -50px;
+
+        &::before {
+          right: 40px;
+          bottom: 50%;
+          transform: rotate(270deg) translateX(-50%);
+        }
+      }
+    }
   }
 
   &__slide {
-    width: 100%;
-    height: 550px;
-    background-color: $color_swiper;
+    padding: 15px 15px 0px 15px;
+    background-color: $color_secondary;
 
-    &-desc {
+    &-pic {
+      width: 100%;
+      height: 550px;
+      background: center / cover no-repeat;
+      text-indent: -9999px;
+    }
+
+    &-title {
       padding: 7px 0;
       text-align: center;
       text-transform: uppercase;
       font-size: 30px;
       color: $color_logo;
     }
-
-    &-pic {
-      width: 100%;
-      height: 91%;
-      background: center / cover no-repeat;
-      text-indent: -9999px;
-    }
   }
 
   &__title {
     @include font('sl');
-    margin: 0 auto 33px;
+    margin-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
     font-size: 150px;
-    line-height: 110px;
+    line-height: 1;
     color: $color_text_light;
   }
 
   &__quote {
-    padding-bottom: 50px;
     margin-top: 40px;
 
-    &__txt {
+    &-text {
       text-align: center;
       text-transform: uppercase;
       font-size: 44px;
-      line-height: 46px;
+      line-height: 1.1;
       color: $color_text_light;
-    }
 
-    &__txt_sm {
-      font-size: 35px;
+      &_sub {
+        font-size: 35px;
+      }
     }
   }
 }
