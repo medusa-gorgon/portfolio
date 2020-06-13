@@ -1,0 +1,21 @@
+.logo {
+  @include center(x);
+  z-index: 10;
+  top: 10%;
+  max-width: 150px;
+
+  &__img {
+    @include img();
+  }
+
+  &__letter {
+    @include font('sl');
+    position: absolute;
+    top: 54%;
+    left: 51%;
+    font-size: 100px;
+    color: $color_text_light;
+    transform: translate(-50%, -50%);
+    user-select: none;
+  }
+}

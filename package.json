@@ -52,10 +52,12 @@
     "pretty-quick": "^2.0.1",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^19.0.0",
-    "stylelint-order": "^3.0.1"
+    "stylelint-order": "^3.0.1",
+    "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "normalize.css": "~8.0.1"
+    "normalize.css": "~8.0.1",
+    "swiper": "^5.4.1"
   },
   "lint-staged": {
     "dev/js/**/*.js": [

@@ -1,1 +1,1 @@
-
+import './Common/swiper';

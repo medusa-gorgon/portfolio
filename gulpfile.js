@@ -12,6 +12,7 @@ global.$ = {
   del: require('del'),
   exec: require('child_process').exec,
   fs: require('fs'),
+  webpack: require('webpack-stream'),
   merge: require('merge-stream'),
 };
 

@@ -2,6 +2,9 @@ module.exports = () => {
   $.gulp.task('js:app-minify', () => {
     return $.gulp
       .src($.config.appJS)
+      .pipe($.webpack({
+        mode: 'development'
+      }))
       .pipe(
         $.gp.babel({
           presets: ['@babel/env'],
