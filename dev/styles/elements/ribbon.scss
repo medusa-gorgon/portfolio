@@ -49,7 +49,7 @@
 
       &::after {
         left: -$width_border_edge;
-        border-left-color: $color_accent_secondary;
+        border-left-color: $color_accent_dark;
       }
     }
 
@@ -58,7 +58,7 @@
 
       &::after {
         right: -$width_border_edge;
-        border-right-color: $color_accent_secondary;
+        border-right-color: $color_accent_dark;
       }
     }
   }
