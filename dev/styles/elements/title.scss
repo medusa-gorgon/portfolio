@@ -1,0 +1,64 @@
+.title {
+  text-align: center;
+  text-shadow: 15px 2px $color_shadow;
+  text-transform: uppercase;
+  font-size: 150px;
+  color: $color_main;
+
+  &__ornament {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    &__xxx {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    &__line {
+      width: 15px;
+      height: 10px;
+      border-top: 2px solid $color_main;
+    }
+
+    &__x {
+      display: block;
+      width: 32px;
+      height: 32px;
+      color: $color_main;
+
+      &::before,
+      &::after {
+        position: absolute;
+        left: 15px;
+        width: 2px;
+        height: 18px;
+        background-color: $color_main;
+        content: '';
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__desc {
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-family: Bertha Light;
+    font-size: 30px;
+    color: $color_main;
+  }
+}
+// .title_light {
+// 	color: $color_bg_about;
+// 	.title__ornament.title__ornament__x,
+// 	.title__desc {
+// 		color: $color_bg_about;
+// 	}

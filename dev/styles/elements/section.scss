@@ -1,5 +1,6 @@
 .section {
   position: relative;
+  height: 100%;
 
   &::before,
   &::after {
@@ -13,11 +14,11 @@
   }
 
   &::before {
-    top: 16px;
+    top: rem(16px);
   }
 
   &::after {
-    bottom: 16px;
+    bottom: rem(16px);
   }
 
   &_after-only {
@@ -31,4 +32,8 @@
       content: none;
     }
   }
+}
+
+.section.header {
+  height: auto;
 }

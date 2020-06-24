@@ -2,102 +2,110 @@
   background: url('/images/hero/hero_bg.png') center / cover no-repeat;
 
   &__wrapper {
-    padding: 80px 0 50px;
+    padding: rem(80px) 0 rem(50px);
   }
 
   &__head {
-    margin-bottom: 55px;
+    margin-bottom: rem(55px);
   }
 
   &__swiper {
+    padding: rem(15px) rem(15px) 0 rem(15px);
+    background-color: $color_secondary;
+
     &-button {
       @include center(y);
       z-index: 1;
       overflow: hidden;
-      width: 96px;
-      height: 96px;
+      width: rem(96px);
+      height: rem(96px);
       border-radius: 50%;
       background-color: $color_secondary;
       cursor: pointer;
 
       @include haf {
-        background: url('/images/hero/hero_bg.png') center / auto no-repeat;
-      }
-
-      &::before {
-        position: absolute;
-        display: block;
-        width: 60px;
-        height: 60px;
-        background: url('/images/icons/arrowDark.png') center / contain
-          no-repeat;
-        content: '';
+        .hero__swiper-button-icon {
+          color: $color_hover;
+        }
       }
 
       &_prev {
-        left: -50px;
+        left: rem(-50px);
 
         &::before {
           top: 50%;
-          left: 40px;
-          transform: rotate(90deg) translateX(-50%);
+          left: rem(40px);
         }
       }
 
       &_next {
-        right: -50px;
+        right: rem(-50px);
 
         &::before {
-          right: 40px;
+          right: rem(40px);
           bottom: 50%;
-          transform: rotate(270deg) translateX(-50%);
+        }
+      }
+
+      &-icon {
+        font-size: rem(40px);
+        color: $color_main;
+        transition: color 0.3s;
+
+        &_prev {
+          position: absolute;
+          top: 25%;
+          left: 55%;
+        }
+
+        &_next {
+          position: absolute;
+          top: 25%;
+          left: 15%;
         }
       }
     }
   }
 
   &__slide {
-    padding: 15px 15px 0px 15px;
-    background-color: $color_secondary;
-
     &-pic {
       width: 100%;
-      height: 550px;
+      height: rem(550px);
       background: center / cover no-repeat;
       text-indent: -9999px;
     }
 
     &-title {
-      padding: 7px 0;
+      padding: rem(7px) 0;
       text-align: center;
       text-transform: uppercase;
-      font-size: 30px;
-      color: $color_logo;
+      font-size: rem(30px);
+      color: $color_main;
     }
   }
 
   &__title {
     @include font('sl');
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     text-align: center;
     text-transform: uppercase;
-    font-size: 150px;
+    font-size: rem(150px);
     line-height: 1;
     color: $color_text_light;
   }
 
   &__quote {
-    margin-top: 40px;
+    margin-top: rem(40px);
 
     &-text {
       text-align: center;
       text-transform: uppercase;
-      font-size: 44px;
+      font-size: rem(44px);
       line-height: 1.1;
       color: $color_text_light;
 
       &_sub {
-        font-size: 35px;
+        font-size: rem(35px);
       }
     }
   }

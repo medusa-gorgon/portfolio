@@ -1,0 +1,57 @@
+.about {
+  background-color: $color_bg_about;
+
+  &__content {
+    padding: 50px 0;
+
+    &__pic,
+    &__name,
+    &__desc {
+      text-align: center;
+      color: $color_main;
+    }
+
+    &__pic {
+      display: inline-block;
+      margin: 0 auto;
+      // padding: 30px;
+      border: solid 3px #cccccc;
+      border-radius: 50%;
+      font-size: 100px;
+      background-color: #d55142;
+    }
+
+    &__name {
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+
+    &__desc {
+      text-transform: uppercase;
+      font-size: 15px;
+
+      &::after {
+        display: block;
+        width: 45px;
+        margin: 5px auto 15px;
+        border-top: solid 2px $color_main;
+        content: '';
+      }
+    }
+
+    &__text {
+      color: $color_main;
+    }
+
+    &__item {
+      &-main {
+        padding: 0 10px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-flow: row;
+    }
+  }
+}

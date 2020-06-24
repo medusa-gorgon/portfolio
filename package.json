@@ -56,6 +56,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "normalize.css": "~8.0.1",
     "swiper": "^5.4.1"
   },

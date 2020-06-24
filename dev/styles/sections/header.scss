@@ -1,5 +1,5 @@
 .header {
   z-index: 8;
-  box-shadow: 0 0 10px 0 $color_shadow;
+  box-shadow: 0 0 rem(10px) 0 $color_shadow;
   background: url('/images/hero/hero_bg.png') center / cover no-repeat;
 }
