@@ -1,0 +1,76 @@
+.about__content {
+  &__pic,
+  &__name,
+  &__desc {
+    text-align: center;
+    color: $color_main;
+  }
+
+  &__pic {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding: rem(70px) 0;
+
+    /* СПРОСИТЬ У ВЛАДА, УБРАТЬ ФЛЕКС КАК ВЫРАВНЯТЬ */
+    border-radius: 50%;
+    font-size: rem(100px);
+    color: $color_secondary;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: 8%;
+      width: rem(200px);
+      height: rem(200px);
+      border-radius: 50%;
+      background-color: $color_circle;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      z-index: 0;
+      top: 10.5%;
+      width: rem(180px);
+      height: rem(180px);
+      border: solid rem(4px) $color_secondary;
+      border-radius: 50%;
+      content: '';
+    }
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-size: rem(40px);
+  }
+
+  &__desc {
+    text-transform: uppercase;
+    font-family: Bertha Light;
+    font-size: rem(16px);
+
+    &::after {
+      display: block;
+      width: rem(45px);
+      margin: rem(5px) auto rem(15px);
+      border-top: solid rem(2px) $color_main;
+      content: '';
+    }
+  }
+
+  &__text {
+    color: $color_main;
+  }
+
+  &__item {
+    &-main {
+      padding: 0 rem(10px);
+    }
+  }
+
+  &-list {
+    display: flex;
+  }
+}

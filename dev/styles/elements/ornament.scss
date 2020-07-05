@@ -1,0 +1,52 @@
+.ornament {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: rem(5px);
+
+  &__clipart {
+    display: flex;
+    align-self: center;
+
+    &-item {
+      position: relative;
+      display: inline-block;
+      width: rem(20px);
+      height: rem(20px);
+      color: $color_main;
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: rem(2px);
+        height: rem(20px);
+        background-color: $color_main;
+        content: '';
+      }
+
+      &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+
+    &__clipart__wrapper {
+      padding: 0 rem(20px);
+    }
+  }
+
+  &__line {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    width: rem(100px);
+    height: rem(3px);
+    background-color: $color_main;
+  }
+}

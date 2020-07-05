@@ -8,11 +8,13 @@ section.section
           +ribbon
         .hero__swiper
           .swiper-container
-            .swiper-wrapper
+            .swiper-wrapper(style='' title='')
               each slide in heroSlides
                 .swiper-slide
                   .hero__slide
-                    .hero__slide-pic(style=`background-image:url('${slide.src}')`)= slide.alt
+                    .hero__slide-pic(
+                      style=`background-image:url('${slide.src}')`
+                    )= slide.alt
                     .hero__slide-title= slide.alt
             .hero__swiper-button.hero__swiper-button_prev
               .hero__swiper-button-icon.hero__swiper-button-icon_prev

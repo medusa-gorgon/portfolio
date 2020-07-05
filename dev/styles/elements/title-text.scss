@@ -1,0 +1,9 @@
+.title-text {
+  padding-top: rem(80px);
+  text-align: center;
+  text-shadow: rem(15px) rem(2px) $color_shadow;
+  text-transform: uppercase;
+  font-size: rem(150px);
+  line-height: rem(110px);
+  color: $color_main;
+}
