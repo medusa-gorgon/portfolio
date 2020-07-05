@@ -1,0 +1,14 @@
+.swiper
+  .swiper-container
+    .swiper-wrapper
+      each slide in heroSlides
+        .swiper-slide
+          .swiper__slide
+            .swiper__slide-pic(style=`background-image:url('${slide.src}')`)= slide.alt
+            .swiper__slide-title= slide.alt
+    .swiper__button.swiper__button_prev
+      .swiper__button-icon.swiper__button-icon_prev
+        span.fas.fa-chevron-left
+    .swiper__button.swiper__button_next
+      .swiper__button-icon.swiper__button-icon_next
+        span.fas.fa-chevron-right

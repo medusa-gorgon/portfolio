@@ -1,10 +1,10 @@
 import Swiper from 'swiper';
 
-const heroSwiper = new Swiper('.swiper-container', {
+const commonSwiper = new Swiper('.swiper .swiper-container', {
   loop: true,
   grabCursor: true,
   navigation: {
-    nextEl: '.hero__swiper-button_next',
-    prevEl: '.hero__swiper-button_prev',
+    nextEl: '.swiper__button_next',
+    prevEl: '.swiper__button_prev',
   },
 });
