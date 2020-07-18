@@ -13,13 +13,6 @@
     margin-bottom: rem(40px);
   }
 
-  &__pic,
-  &__title,
-  &__subtitle {
-    text-align: center;
-    color: $color_main;
-  }
-
   &__pic {
     position: relative;
     z-index: 1;
@@ -28,8 +21,7 @@
     align-items: center;
     width: rem(200px);
     height: rem(200px);
-    margin: 0 auto;
-    margin-bottom: rem(20px);
+    margin: 0 auto rem(20px);
     font-size: rem(100px);
     line-height: 1;
     color: $color_secondary;
@@ -46,6 +38,7 @@
 
     &::after {
       @include center;
+      z-index: -1;
       width: rem(180px);
       height: rem(180px);
       border: solid rem(4px) $color_secondary;
@@ -56,28 +49,32 @@
 
   &__title {
     @include font;
-    margin-bottom: rem(5px);
+    margin-bottom: rem(10px);
+    text-align: center;
     text-transform: uppercase;
     font-size: rem(40px);
     line-height: 1;
+    color: $color_main;
   }
 
   &__subtitle {
     @include font(300);
     position: relative;
-    padding-bottom: rem(15px);
+    padding-bottom: rem(20px);
     margin-bottom: rem(20px);
+    text-align: center;
     text-transform: uppercase;
-    font-size: rem(16px);
+    font-size: rem(20px);
     line-height: 1;
+    color: $color_main;
 
     &::after {
       @include center(x);
       position: absolute;
       bottom: 0;
       display: block;
-      width: rem(45px);
-      height: rem(3px);
+      width: rem(50px);
+      height: rem(4px);
       background-color: $color_main;
       content: '';
     }
