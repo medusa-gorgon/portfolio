@@ -1,12 +1,15 @@
+include ../modules/section-head
+
 section.section
   .about
     .container
-      .about__wrapper
-        .section-title
-          .section-title__wrapper
-            include ../elements/title-text
-            +title-text('About me')
-            include ../elements/ornament
-            include ../elements/title-desc
-            +title-desc('I am a front-end developer from Minsk')
-            include ../elements/about__content
+      .section__wrapper.about__wrapper
+        +section-head('About me', 'I am a front-end developer from Minsk')
+        ul.about__list
+          each item in about
+            li.about__item
+              .about__pic
+                span(class= item.icon title=item.iconAlt aria-label=item.iconAlt)
+              .about__title= item.title
+              .about__subtitle= item.subtitle
+              .about__text!= item.text

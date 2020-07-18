@@ -25,5 +25,35 @@
       "src": "images/hero/slider/slide6.jpg",
       "alt": "Cornflowers"
     }
+  ],
+  "about": [
+    {
+      "icon": "fas fa-tv",
+      "iconAlt": "TV",
+      "title": "Movies",
+      "subtitle": "What I watch",
+      "text": "Movies. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, qui totam corrupti maxime <strong>laboriosam</strong> suscipit magni quisquam, quod doloribus provident tempora explicabo a cupiditate facere animi. Voluptas explicabo a ea?Ipsam dolores ipsum consectetur delectus ad numquam quibusdam minus ea beatae voluptatibus, sequi laboriosam velit cumque doloribus maxime exercitationem, ab eaque."
+    },
+    {
+      "icon": "fas fa-compact-disc",
+      "iconAlt": "Compact disc",
+      "title": "Music",
+      "subtitle": "What I listen",
+      "text": "Music. Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Veniam, qui totam corrupti</strong> maxime laboriosam suscipit magni quisquam, quod doloribus provident tempora explicabo a cupiditate facere animi. Voluptas explicabo a ea?Ipsam dolores ipsum consectetur delectus ad numquam quibusdam minus ea beatae voluptatibus, sequi laboriosam velit cumque doloribus maxime exercitationem, ab eaque."
+    },
+    {
+      "icon": "fas fa-tshirt",
+      "iconAlt": "T-Shirt",
+      "title": "Clothes",
+      "subtitle": "What I wear",
+      "text": "Clothes. Lorem ipsum dolor sit <strong>strong amet consectetur</strong> adipisicing elit. Veniam, qui totam corrupti maxime laboriosam suscipit magni quisquam, quod doloribus provident tempora explicabo a cupiditate facere animi. Voluptas explicabo a ea?Ipsam dolores ipsum consectetur delectus ad numquam quibusdam minus ea beatae voluptatibus, sequi laboriosam velit cumque doloribus maxime exercitationem, ab eaque."
+    },
+    {
+      "icon": "fas fa-apple-alt",
+      "iconAlt": "Apple",
+      "title": "Food",
+      "subtitle": "What I eat",
+      "text": "Food. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, qui <strong>totam corrupti</strong> maxime laboriosam suscipit magni quisquam, quod doloribus provident tempora explicabo a cupiditate facere animi. Voluptas explicabo a ea?Ipsam dolores ipsum consectetur delectus ad numquam quibusdam minus ea beatae voluptatibus, sequi laboriosam velit cumque doloribus maxime exercitationem, ab eaque."
+    }
   ]
 }

@@ -1,13 +1,9 @@
+include ../modules/section-head
+
 section.section
   .portfolio
     .container
-      .about__wrapper
-        .section-title
-          .section-title__wrapper
-            include ../elements/title-text
-            +title-text('Portfolio')
-            include ../elements/ornament
-            include ../elements/title-desc
-            +title-desc('Simplicity is the ultimate sophistication')
-            include ../elements/filter
-          include ../elements/gallery
+      .section__wrapper.about__wrapper
+        +section-head('Portfolio', 'Simplicity is the ultimate sophistication')
+        include ../elements/filter
+        include ../elements/gallery
