@@ -1,12 +1,13 @@
 .gallery-section
   .gallery__wrapper
     .gallery
-      ul.gallery__list
-        li.gallery__list__item
-        li.gallery__list__item
-        li.gallery__list__item
-        li.gallery__list__item
-        li.gallery__list__item
-        li.gallery__list__item
-        li.gallery__list__item
-        li.gallery__list__item
+      ul.gallery
+        each product in gallery
+          li.gallery__item
+            .gallery__product
+              .gallery__pic(style=`background-image: url('${product.src}')`)
+              .gallery__info
+                .gallery__icon-wrapper
+                  .gallery__icon
+                    span(class=product.icon aria-label=product.iconAlt)
+                .gallery__desc= product.desc

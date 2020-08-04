@@ -1,0 +1,15 @@
+.all-button {
+  display: block;
+  margin: 0 auto;
+
+  &__line {
+    width: rem(60px);
+    height: rem(3px);
+    margin: rem(20px) auto rem(7px) auto;
+    background-color: $color_main;
+  }
+
+  &__desc {
+    text-transform: uppercase;
+  }
+}

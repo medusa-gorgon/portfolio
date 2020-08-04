@@ -2,27 +2,27 @@
   "nav": ["About me", "Portfolio", "My blog", "Contact me"],
   "heroSlides": [
     {
-      "src": "images/hero/slider/slide1.jpg",
+      "src": "images/hero/slider/forest.jpg",
       "alt": "Forest life"
     },
     {
-      "src": "images/hero/slider/slide2.jpg",
-      "alt": "City"
+      "src": "images/hero/slider/singapore.jpg",
+      "alt": "Gardens by the Bay"
     },
     {
-      "src": "images/hero/slider/slide3.jpg",
+      "src": "images/hero/slider/meadow.jpg",
       "alt": "Yellow meadow"
     },
     {
-      "src": "images/hero/slider/slide4.jpg",
+      "src": "images/hero/slider/tea.jpg",
       "alt": "Good morning"
     },
     {
-      "src": "images/hero/slider/slide5.jpg",
+      "src": "images/hero/slider/dandelions.jpg",
       "alt": "Dandelions"
     },
     {
-      "src": "images/hero/slider/slide6.jpg",
+      "src": "images/hero/slider/cornflowers.jpg",
       "alt": "Cornflowers"
     }
   ],
@@ -54,6 +54,56 @@
       "title": "Food",
       "subtitle": "What I eat",
       "text": "Food. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, qui <strong>totam corrupti</strong> maxime laboriosam suscipit magni quisquam, quod doloribus provident tempora explicabo a cupiditate facere animi. Voluptas explicabo a ea?Ipsam dolores ipsum consectetur delectus ad numquam quibusdam minus ea beatae voluptatibus, sequi laboriosam velit cumque doloribus maxime exercitationem, ab eaque."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "images/hero/slider/forest.jpg",
+      "icon": "fas fa-camera-retro",
+      "iconAlt": "Camera",
+      "desc": "Galleries are funny"
+    },
+    {
+      "src": "images/hero/slider/singapore.jpg",
+      "icon": "fas fa-laptop",
+      "iconAlt": "Laptop",
+      "desc": "A vimeo reel"
+    },
+    {
+      "src": "images/hero/slider/meadow.jpg",
+      "icon": "fas fa-volume-up",
+      "iconAlt": "Volume up",
+      "desc": "Love for old cameras"
+    },
+    {
+      "src": "images/hero/slider/tea.jpg",
+      "icon": "far fa-sticky-note",
+      "iconAlt": "Notes",
+      "desc": "Detailed project page"
+    },
+    {
+      "src": "images/hero/slider/dandelions.jpg",
+      "icon": "fas fa-laptop",
+      "iconAlt": "Laptop",
+      "desc": "YouTube video"
+    },
+    {
+      "src": "images/hero/slider/forest.jpg",
+      "icon": "fas fa-paperclip",
+      "iconAlt": "Paperclip",
+      "desc": "Another external link"
+    },
+    {
+      "src": "images/hero/slider/forest.jpg",
+      "icon": "fas fa-camera-retro",
+      "iconAlt": "Camera",
+      "desc": "A lightbox image"
+    },
+    {
+      "src": "images/hero/slider/forest.jpg",
+      "icon": "fas fa-volume-up",
+      "iconAlt": "Volume up",
+      "desc": "The dark tempest"
     }
   ]
 }

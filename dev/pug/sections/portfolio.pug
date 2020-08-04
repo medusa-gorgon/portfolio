@@ -1,9 +1,11 @@
 include ../modules/section-head
+include ../modules/all-button
 
 section.section
   .portfolio
     .container
-      .section__wrapper.about__wrapper
+      .section__wrapper.portfolio__wrapper
         +section-head('Portfolio', 'Simplicity is the ultimate sophistication')
         include ../elements/filter
         include ../elements/gallery
+        +all-button('Browse all')

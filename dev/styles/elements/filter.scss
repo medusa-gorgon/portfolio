@@ -1,5 +1,5 @@
 .filter {
-  padding-bottom: 20px;
+  padding-bottom: rem(20px);
 
   &__wrapper {
     display: flex;
@@ -7,48 +7,50 @@
   }
 
   &__title {
-    padding: 0 10px;
-    font-size: 20px;
+    padding: 0 rem(25px) 0 rem(10px);
+    font-size: rem(27px);
   }
 
-  &__elements {
-    &-list {
-      display: flex;
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    z-index: 1;
+    padding: rem(4px) rem(5px);
+    margin: rem(10px);
+    margin: 0 rem(13px);
+    border-radius: rem(2px);
+    background-color: $color_secondary;
+
+    &-link {
+      font-size: rem(23px);
     }
 
-    &-item {
-      position: relative;
-      z-index: 1;
-      padding: 4px 5px;
-      margin: 10px;
-      margin: 0 13px;
-      border-radius: 2px;
-      background-color: $color_secondary;
+    &::before {
+      position: absolute;
+      z-index: -1;
+      bottom: rem(-1px);
+      left: rem(-40px);
+      width: 0;
+      height: 0;
+      border: solid rem(21px) transparent;
+      border-radius: rem(2px);
+      content: '';
+      border-right-color: $color_secondary;
+    }
 
-      &::before {
-        position: absolute;
-        z-index: -1;
-        bottom: rem(-0.5px);
-        left: rem(-30px);
-        width: 0;
-        height: 0;
-        border: solid rem(15.5px) transparent;
-        border-right-color: $color_secondary;
-        border-radius: rem(2px);
-        content: '';
-      }
-
-      &::after {
-        position: absolute;
-        top: 50%;
-        left: -4px;
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        background-color: $color_accent_secondary;
-        transform: translateY(-50%);
-        content: '';
-      }
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: rem(-4px);
+      width: rem(5px);
+      height: rem(5px);
+      border-radius: 50%;
+      background-color: $color_accent_dark;
+      transform: translateY(-50%);
+      content: '';
     }
   }
 }

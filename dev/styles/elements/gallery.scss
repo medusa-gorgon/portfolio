@@ -1,24 +1,45 @@
 .gallery {
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    &__item {
-      width: 300px;
-      height: 300px;
-      margin: 15px;
-      background-image: url(../../images/hero/slider/slide2.jpg);
-      flex-basis: 20%;
+  &__product {
+    padding: rem(5px) rem(5px) rem(15px) rem(5px);
+    margin: rem(15px);
+    background-color: $color_secondary;
+    flex-basis: 25%;
+  }
 
-      &::before {
-        display: block;
-        width: 105%;
-        height: 105%;
-        padding-bottom: 50px;
-        color: $color_secondary;
-        content: '';
-      }
+  &__pic {
+    z-index: 3;
+    width: rem(350px);
+    height: rem(320px);
+    background: center / cover no-repeat;
+  }
+
+  &__info {
+    margin-top: rem(-18px);
+    text-align: center;
+    line-height: rem(14px);
+  }
+
+  &__icon {
+    @include center;
+    font-size: rem(30px);
+
+    &-wrapper {
+      position: relative;
+      display: inline-block;
+      width: rem(60px);
+      height: rem(60px);
+      border-radius: 50%;
+      background-color: $color_secondary;
     }
+  }
+
+  &__desc {
+    text-transform: uppercase;
+    font-size: rem(20px);
   }
 }
