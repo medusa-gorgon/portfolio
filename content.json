@@ -56,6 +56,32 @@
       "text": "Food. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, qui <strong>totam corrupti</strong> maxime laboriosam suscipit magni quisquam, quod doloribus provident tempora explicabo a cupiditate facere animi. Voluptas explicabo a ea?Ipsam dolores ipsum consectetur delectus ad numquam quibusdam minus ea beatae voluptatibus, sequi laboriosam velit cumque doloribus maxime exercitationem, ab eaque."
     }
   ],
+  "filter": [
+    {
+      "text": "design"
+    },
+    {
+      "text": "logo"
+    },
+    {
+      "text": "photography"
+    },
+    {
+      "text": "poster"
+    },
+    {
+      "text": "resources"
+    },
+    {
+      "text": "retro"
+    },
+    {
+      "text": "t-shirts"
+    },
+    {
+      "text": "videos"
+    }
+  ],
   "gallery": [
     {
       "src": "images/hero/slider/forest.jpg",

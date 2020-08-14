@@ -6,6 +6,11 @@ section.section
     .container
       .section__wrapper.portfolio__wrapper
         +section-head('Portfolio', 'Simplicity is the ultimate sophistication')
-        include ../elements/filter
+        .portfolio__filter
+          .portfolio__filter-title Filter by
+          ul.portfolio__filter-list
+            each item in filter
+              li.portfolio__filter-item
+                button(type='button').portfolio__filter-tag= item.text
         include ../elements/gallery
         +all-button('Browse all')
