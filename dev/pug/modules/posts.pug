@@ -1,0 +1,18 @@
+.post
+  .post__wrapper
+    ul.post__list
+      each item in post
+        li.post__item
+          .post__pic(
+            style=`background-image: url('${item.src}')`
+            aria-label=item.alt
+          )
+          .post__content
+            .post__title= item.title
+            .post__tags= item.tags
+            button.post__responses(type='button')= item.responses
+            .post__line
+            p.post__text
+              span.post__text= item.text
+              button.post__more(type='button')
+                strong (More...)

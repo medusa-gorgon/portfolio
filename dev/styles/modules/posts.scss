@@ -1,0 +1,55 @@
+.post {
+  &__item {
+    display: flex;
+    height: 350px;
+    margin-bottom: 60px;
+  }
+
+  &__content {
+    flex-basis: 70%;
+  }
+
+  &__title,
+  &__tags,
+  &__responses,
+  &__line,
+  &__text,
+  &__more {
+    color: $color_main;
+  }
+
+  &__title {
+    font-size: 40px;
+  }
+
+  &__tags,
+  &__responses {
+    // display: flex;
+  }
+
+  &__responses {
+    align-self: flex-end;
+    text-transform: uppercase;
+  }
+
+  &__text,
+  &__more {
+    @include font(300);
+    font-size: 29px;
+  }
+
+  &__line {
+    width: rem(60px);
+    height: rem(3px);
+    background-color: $color_main;
+  }
+
+  &__pic {
+    width: 450px;
+    height: 350px;
+    margin-right: 35px;
+    border: solid $color_secondary 6px;
+    border-radius: 5px;
+    background: center / cover no-repeat;
+  }
+}

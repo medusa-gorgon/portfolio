@@ -39,6 +39,8 @@
   }
 
   &__desc {
+    position: relative;
+    z-index: 4;
     text-transform: uppercase;
     font-size: rem(20px);
   }
