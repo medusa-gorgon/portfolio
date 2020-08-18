@@ -35,6 +35,22 @@
       }
     }
 
+    &-icon {
+      position: absolute;
+      top: 25%;
+      font-size: rem(40px);
+      color: $color_main;
+      transition: color 0.3s;
+
+      &_prev {
+        left: 55%;
+      }
+
+      &_next {
+        left: 15%;
+      }
+    }
+
     &_prev {
       left: rem(-50px);
 
@@ -50,22 +66,6 @@
       &::before {
         right: rem(40px);
         bottom: 50%;
-      }
-    }
-
-    &-icon {
-      position: absolute;
-      top: 25%;
-      font-size: rem(40px);
-      color: $color_main;
-      transition: color 0.3s;
-
-      &_prev {
-        left: 55%;
-      }
-
-      &_next {
-        left: 15%;
       }
     }
   }

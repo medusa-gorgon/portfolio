@@ -1,15 +1,23 @@
 .all-button {
   display: block;
   margin: 0 auto;
-
-  &__line {
-    width: rem(60px);
-    height: rem(3px);
-    margin: rem(20px) auto rem(7px) auto;
-    background-color: $color_main;
-  }
+  color: $color_main;
 
   &__desc {
+    position: relative;
+    margin: 20px;
     text-transform: uppercase;
+
+    &::before {
+      @include center(x);
+      position: absolute;
+      bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      width: rem(60px);
+      height: rem(3px);
+      background-color: $color_main;
+      content: '';
+    }
   }
 }

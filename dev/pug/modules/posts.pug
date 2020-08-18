@@ -8,11 +8,12 @@
             aria-label=item.alt
           )
           .post__content
-            .post__title= item.title
-            .post__tags= item.tags
-            button.post__responses(type='button')= item.responses
-            .post__line
-            p.post__text
-              span.post__text= item.text
-              button.post__more(type='button')
-                strong (More...)
+            .post__head
+              a.post__title(href='#')= item.title
+              .post__info
+                .post__tags= item.tags
+                button.post__responses(type='button')= item.responses
+            .post__body
+              .post__text
+                p= item.text
+                  button.post__more(type='button') (More...)

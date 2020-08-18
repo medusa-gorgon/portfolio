@@ -1,10 +1,10 @@
 .gallery-section
   .gallery__wrapper
     .gallery
-      ul.gallery
+      ul.gallery__list
         each product in gallery
           li.gallery__item
-            .gallery__product
+            a.gallery__product(href='#')
               .gallery__pic(style=`background-image: url('${product.src}')`)
               .gallery__info
                 .gallery__icon-wrapper

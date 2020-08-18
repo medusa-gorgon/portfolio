@@ -1,5 +1,9 @@
 header.header.section.section_after-only
   .container
     .header__wrapper
-      include ../elements/nav
-      include ../elements/logo
+      nav.header__nav
+        each text in nav
+          a(href="#").header__nav-link= text
+      .header__logo
+        img(src="./images/logo-bg.png" alt="Logo background").header__logo-img
+        .header__logo-letter M
