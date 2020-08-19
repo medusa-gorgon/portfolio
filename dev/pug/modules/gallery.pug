@@ -1,13 +1,11 @@
-.gallery-section
-  .gallery__wrapper
-    .gallery
-      ul.gallery__list
-        each product in gallery
-          li.gallery__item
-            a.gallery__product(href='#')
-              .gallery__pic(style=`background-image: url('${product.src}')`)
-              .gallery__info
-                .gallery__icon-wrapper
-                  .gallery__icon
-                    span(class=product.icon aria-label=product.iconAlt)
-                .gallery__desc= product.desc
+.gallery
+  ul.gallery__list
+    each product in gallery
+      li.gallery__item
+        a.gallery__project(href='#')
+          .gallery__pic(style=`background-image: url('${product.src}')`)
+          .gallery__info
+            .gallery__icon-wrapper
+              .gallery__icon
+                span(class=product.icon aria-label=product.iconAlt)
+            .gallery__title= product.desc

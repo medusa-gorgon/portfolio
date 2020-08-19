@@ -1,0 +1,29 @@
+.show-all {
+  @include font(700);
+  position: relative;
+  display: block;
+  padding-top: rem(15px);
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: rem(20px);
+  color: $color_main;
+
+  @include haf {
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &::before {
+    @include center(x);
+    position: absolute;
+    top: 0;
+    display: block;
+    flex-wrap: wrap;
+    width: rem(60px);
+    height: rem(3px);
+    background-color: $color_main;
+    transition: all 0.3s;
+    content: '';
+  }
+}

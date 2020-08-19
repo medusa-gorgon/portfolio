@@ -1,58 +1,74 @@
 .gallery {
   &__list {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 -15px;
+    margin: 0 rem(-15px) rem(-30px);
   }
 
   &__item {
     width: 25%;
+    padding: 0 rem(15px);
+    margin-bottom: rem(30px);
   }
 
-  &__product {
+  &__project {
     display: block;
-    padding: rem(5px) rem(5px) rem(5px) rem(5px);
-    margin: rem(15px);
-    box-shadow: 1px -1px 3px $color_shadow;
+    padding: rem(6px) rem(6px) rem(20px) rem(6px);
+    border-radius: 5px;
+    box-shadow: rem(1px) rem(-1px) rem(3px) $color_shadow;
     background-color: $color_secondary;
+    transition: all 0.3s;
+
+    @include haf {
+      background-color: $color_main;
+
+      .gallery {
+        &__icon-wrapper {
+          background-color: $color_main;
+        }
+
+        &__icon,
+        &__title {
+          color: $color_secondary;
+        }
+      }
+    }
   }
 
   &__pic {
-    z-index: 3;
     width: 100%;
-    height: 250px;
+    height: rem(300px);
     background: center / cover no-repeat;
   }
 
   &__info {
-    margin-top: rem(-18px);
-    text-align: center;
-    line-height: rem(14px);
-    color: $color_main;
+    margin-top: rem(-20px);
   }
 
   &__icon {
     @include center;
     font-size: rem(30px);
+    line-height: 1;
     color: $color_main;
+    transition: all 0.3s;
 
     &-wrapper {
       position: relative;
-      display: inline-block;
       width: rem(60px);
       height: rem(60px);
+      margin: 0 auto rem(5px);
       border-radius: 50%;
       background-color: $color_secondary;
+      transition: all 0.3s;
     }
   }
 
-  &__desc {
-    position: relative;
-    z-index: 4;
+  &__title {
+    text-align: center;
     text-transform: uppercase;
     font-size: rem(20px);
     line-height: 1.1;
+    color: $color_main;
+    transition: all 0.3s;
   }
 }

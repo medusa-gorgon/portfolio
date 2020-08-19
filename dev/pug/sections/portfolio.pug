@@ -1,5 +1,5 @@
 include ../modules/section-head
-include ../modules/all-button
+include ../modules/show-all
 
 section.section
   .portfolio
@@ -12,5 +12,6 @@ section.section
             each item in filter
               li.portfolio__filter-item
                 button.portfolio__filter-tag(type='button')= item.text
-        include ../modules/gallery
-        +all-button('Browse all')
+        .portfolio__gallery
+          include ../modules/gallery
+        +show-all('Browse all')

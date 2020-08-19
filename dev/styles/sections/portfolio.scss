@@ -8,8 +8,8 @@
     &-title {
       @include font;
       flex-shrink: 0;
-      padding-right: rem(25px);
-      font-size: rem(27px);
+      margin-right: rem(25px);
+      font-size: rem(28px);
       color: $color_main;
     }
 
@@ -20,22 +20,37 @@
     }
 
     &-item {
-      padding: 0 rem(10px) rem(15px) rem(13px);
+      padding: 0 rem(10px);
+      margin-bottom: rem(15px);
     }
 
     &-tag {
       position: relative;
       z-index: 1;
-      padding: rem(5px) rem(5px) rem(5px) rem(10px);
-      margin-left: rem(15px);
-      box-shadow: 2px 2px 3px $color_shadow;
-      font-size: rem(24px);
+      padding: rem(9px) rem(5px) rem(5px) rem(15px);
+      margin-left: rem(17px);
+      box-shadow: rem(2px) rem(2px) rem(3px) $color_shadow;
+      font-size: rem(20px);
       line-height: 1.1;
       color: $color_main;
       background-color: $color_secondary;
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       white-space: nowrap;
+      transition: all 0.3s;
+
+      @include haf {
+        color: $color_secondary;
+        background-color: $color_accent_dark;
+
+        &::before {
+          border-right-color: $color_accent_dark;
+        }
+
+        &::after {
+          background-color: $color_main;
+        }
+      }
 
       &::before {
         position: absolute;
@@ -45,8 +60,9 @@
         width: 0;
         height: 0;
         border: solid rem(18px) transparent;
-        content: '';
         border-right-color: $color_secondary;
+        transition: all 0.3s;
+        content: '';
       }
 
       &::after {
@@ -56,8 +72,13 @@
         height: rem(5px);
         border-radius: 50%;
         background-color: $color_accent_dark;
+        transition: all 0.3s;
         content: '';
       }
     }
+  }
+
+  &__gallery {
+    margin-bottom: rem(50px);
   }
 }
