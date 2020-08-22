@@ -1,0 +1,115 @@
+.post {
+  &__item {
+    display: flex;
+    margin-bottom: rem(60px);
+  }
+
+  &__title,
+  &__text,
+  &__more,
+  &__tags,
+  &__responses {
+    color: $color_text;
+  }
+
+  &__title {
+    font-size: rem(40px);
+    transition: 0.3s;
+
+    @include haf {
+      font-size: rem(43px);
+      color: $black;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__head {
+    &::after {
+      display: block;
+      width: rem(60px);
+      height: rem(3px);
+      margin: rem(10px) 0 rem(15px);
+      background-color: $color_text;
+      content: '';
+    }
+  }
+
+  &__tags {
+    padding: rem(7px);
+    border-radius: rem(4px);
+    font-size: rem(17px);
+    line-height: 1;
+    transition: 0.3s;
+    cursor: pointer;
+
+    @include haf {
+      color: $black;
+      background-color: $color_secondary;
+    }
+  }
+
+  &__responses {
+    align-self: flex-end;
+    padding: rem(7px);
+    margin-left: rem(15px);
+    border-radius: rem(4px);
+    text-transform: uppercase;
+    font-size: rem(17px);
+    line-height: 1;
+    transition: 0.3s;
+
+    @include haf {
+      color: $black;
+      background-color: $color_secondary;
+    }
+  }
+
+  &__text,
+  &__more {
+    @include font(300);
+    font-size: rem(29px);
+  }
+
+  &__more {
+    text-transform: uppercase;
+    font-size: rem(19px);
+    transition: 0.3s;
+
+    @include haf {
+      font-size: rem(30px);
+      color: $black;
+    }
+  }
+
+  &__content {
+    width: 70%;
+    padding-left: rem(15px);
+  }
+
+  &__pic {
+    width: 30%;
+    height: rem(350px);
+    padding-right: rem(15px);
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: solid $color_secondary rem(6px);
+      border-radius: rem(5px);
+      background: center / cover no-repeat;
+      transition: 0.3s;
+
+      @include haf {
+        width: 105%;
+        height: 105%;
+      }
+    }
+  }
+}

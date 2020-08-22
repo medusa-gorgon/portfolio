@@ -29,7 +29,7 @@
 
         &__icon,
         &__title {
-          color: $color_secondary;
+          color: $color_text_light;
         }
       }
     }
@@ -49,7 +49,7 @@
     @include center;
     font-size: rem(30px);
     line-height: 1;
-    color: $color_main;
+    color: $color_text;
     transition: all 0.3s;
 
     &-wrapper {
@@ -68,7 +68,7 @@
     text-transform: uppercase;
     font-size: rem(20px);
     line-height: 1.1;
-    color: $color_main;
+    color: $color_text;
     transition: all 0.3s;
   }
 }

@@ -54,7 +54,7 @@
     text-transform: uppercase;
     font-size: rem(40px);
     line-height: 1;
-    color: $color_main;
+    color: $color_text;
   }
 
   &__subtitle {
@@ -66,7 +66,7 @@
     text-transform: uppercase;
     font-size: rem(20px);
     line-height: 1;
-    color: $color_main;
+    color: $color_text;
 
     &::after {
       @include center(x);
@@ -75,14 +75,14 @@
       display: block;
       width: rem(50px);
       height: rem(4px);
-      background-color: $color_main;
+      background-color: $color_text;
       content: '';
     }
   }
 
   &__text {
     @include font;
-    color: $color_main;
+    color: $color_text;
 
     strong {
       @include font(700);

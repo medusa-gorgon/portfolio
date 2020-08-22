@@ -8,7 +8,7 @@
     text-transform: uppercase;
     font-size: rem(150px);
     line-height: 1;
-    color: $color_main;
+    color: $color_text;
   }
 
   &__desc {
@@ -18,6 +18,6 @@
     text-transform: uppercase;
     font-size: rem(30px);
     line-height: 1;
-    color: $color_main;
+    color: $color_text;
   }
 }

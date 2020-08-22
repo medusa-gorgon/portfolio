@@ -15,10 +15,14 @@
 		<header class="header section section_after-only">
 			<div class="container">
 				<div class="header__wrapper">
-					<nav class="header__nav"><a class="header__nav-link" href="#">About me</a><a class="header__nav-link" href="#">Portfolio</a><a class="header__nav-link" href="#">My blog</a><a class="header__nav-link" href="#">Contact me</a>
-					</nav>
-					<div class="header__logo"><img class="header__logo-img" src="./images/logo-bg.png" alt="Logo background">
-						<div class="header__logo-letter">M</div>
+					<div class="header__nav">
+						<nav class="nav"><a class="nav-link" href="#">About me</a><a class="nav-link" href="#">Portfolio</a><a class="nav-link" href="#">My blog</a><a class="nav-link" href="#">Contact me</a>
+						</nav>
+					</div>
+					<div class="header__logo">
+						<div class="logo"><img class="logo-img" src="./images/logo-bg.png" alt="Logo background">
+							<div class="logo-letter">M</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -184,33 +188,35 @@
 									</div>
 								</div>
 						<div class="portfolio__filter">
-							<div class="portfolio__filter-title">Filter by</div>
-							<ul class="portfolio__filter-list">
-								<li class="portfolio__filter-item">
-									<button class="portfolio__filter-tag" type="button">design</button>
-								</li>
-								<li class="portfolio__filter-item">
-									<button class="portfolio__filter-tag" type="button">logo</button>
-								</li>
-								<li class="portfolio__filter-item">
-									<button class="portfolio__filter-tag" type="button">photography</button>
-								</li>
-								<li class="portfolio__filter-item">
-									<button class="portfolio__filter-tag" type="button">poster</button>
-								</li>
-								<li class="portfolio__filter-item">
-									<button class="portfolio__filter-tag" type="button">resources</button>
-								</li>
-								<li class="portfolio__filter-item">
-									<button class="portfolio__filter-tag" type="button">retro</button>
-								</li>
-								<li class="portfolio__filter-item">
-									<button class="portfolio__filter-tag" type="button">t-shirts</button>
-								</li>
-								<li class="portfolio__filter-item">
-									<button class="portfolio__filter-tag" type="button">videos</button>
-								</li>
-							</ul>
+							<div class="filter">
+								<div class="filter-title">Filter by</div>
+								<ul class="filter-list">
+									<li class="filter-item">
+										<button class="filter-tag" type="button">design</button>
+									</li>
+									<li class="filter-item">
+										<button class="filter-tag" type="button">logo</button>
+									</li>
+									<li class="filter-item">
+										<button class="filter-tag" type="button">photography</button>
+									</li>
+									<li class="filter-item">
+										<button class="filter-tag" type="button">poster</button>
+									</li>
+									<li class="filter-item">
+										<button class="filter-tag" type="button">resources</button>
+									</li>
+									<li class="filter-item">
+										<button class="filter-tag" type="button">retro</button>
+									</li>
+									<li class="filter-item">
+										<button class="filter-tag" type="button">t-shirts</button>
+									</li>
+									<li class="filter-item">
+										<button class="filter-tag" type="button">videos</button>
+									</li>
+								</ul>
+							</div>
 						</div>
 						<div class="portfolio__gallery">
 							<div class="gallery">
@@ -308,11 +314,11 @@
 										<p>News from my house</p>
 									</div>
 								</div>
-						<div class="post">
-							<div class="post__wrapper">
+						<div class="blog__post">
+							<div class="post">
 								<ul class="post__list">
 									<li class="post__item">
-										<div class="post__pic" style="background-image: url('images/hero/slider/tea.jpg')" aria-label="tea in the morning"></div>
+										<div class="post__pic"><a class="post__pic-link" style="background-image: url('images/hero/slider/tea.jpg')" aria-label="tea in the morning"></a></div>
 										<div class="post__content">
 											<div class="post__head"><a class="post__title" href="#">The Magic Wheel</a>
 												<div class="post__info">
@@ -330,7 +336,7 @@
 										</div>
 									</li>
 									<li class="post__item">
-										<div class="post__pic" style="background-image: url('images/hero/slider/cornflowers.jpg')" aria-label="blue conrflowers"></div>
+										<div class="post__pic"><a class="post__pic-link" style="background-image: url('images/hero/slider/cornflowers.jpg')" aria-label="blue conrflowers"></a></div>
 										<div class="post__content">
 											<div class="post__head"><a class="post__title" href="#">The lonely road</a>
 												<div class="post__info">
@@ -348,7 +354,7 @@
 										</div>
 									</li>
 									<li class="post__item">
-										<div class="post__pic" style="background-image: url('images/hero/slider/meadow.jpg')" aria-label="yellow meadow"></div>
+										<div class="post__pic"><a class="post__pic-link" style="background-image: url('images/hero/slider/meadow.jpg')" aria-label="yellow meadow"></a></div>
 										<div class="post__content">
 											<div class="post__head"><a class="post__title" href="#">I love gasoline smell</a>
 												<div class="post__info">

@@ -7,11 +7,7 @@ section.section
       .section__wrapper.portfolio__wrapper
         +section-head('Portfolio', 'Simplicity is the ultimate sophistication')
         .portfolio__filter
-          .portfolio__filter-title Filter by
-          ul.portfolio__filter-list
-            each item in filter
-              li.portfolio__filter-item
-                button.portfolio__filter-tag(type='button')= item.text
+          include ../modules/filter
         .portfolio__gallery
           include ../modules/gallery
         +show-all('Browse all')

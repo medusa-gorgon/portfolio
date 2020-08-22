@@ -12,7 +12,7 @@
     text-transform: uppercase;
     font-size: rem(150px);
     line-height: 1;
-    color: $color_secondary;
+    color: $color_text_light;
   }
 
   &__quote {
@@ -23,7 +23,7 @@
       text-transform: uppercase;
       font-size: rem(44px);
       line-height: 1.1;
-      color: $color_secondary;
+      color: $color_text_light;
 
       &_sub {
         font-size: rem(35px);

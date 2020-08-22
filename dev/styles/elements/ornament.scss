@@ -22,7 +22,7 @@
         left: 50%;
         width: rem(2px);
         height: 100%;
-        background-color: $color_main;
+        background-color: $color_text;
         content: '';
       }
 
@@ -39,6 +39,6 @@
   &__line {
     width: rem(60px);
     height: rem(3px);
-    background-color: $color_main;
+    background-color: $color_text;
   }
 }

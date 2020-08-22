@@ -6,5 +6,6 @@ section.section
     .container
       .section__wrapper.blog__wrapper
         +section-head('My blog', 'News from my house')
-        include ../modules/posts
+        .blog__post
+          include ../modules/post
         +show-all('Show all posts')

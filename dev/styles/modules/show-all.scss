@@ -6,7 +6,7 @@
   margin: 0 auto;
   text-transform: uppercase;
   font-size: rem(20px);
-  color: $color_main;
+  color: $color_text;
 
   @include haf {
     &::before {
@@ -22,7 +22,7 @@
     flex-wrap: wrap;
     width: rem(60px);
     height: rem(3px);
-    background-color: $color_main;
+    background-color: $color_text;
     transition: all 0.3s;
     content: '';
   }
