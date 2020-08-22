@@ -1,0 +1,26 @@
+.posts
+  ul.posts__list
+    each post in posts
+      li.posts__item
+        .post
+          .post__pic
+            a.post__pic-link(href='#')
+              div.post__img(
+                style=`background-image: url('${post.src}')`
+                aria-label=post.alt
+              )
+          .post__content
+            .post__head
+              a.post__head-link(href='#')
+                h3.post__title= post.title
+                .post__info
+                  .post__info-item= post.info.date
+                  .post__info-item= post.info.author
+                  .post__info-item
+                    each tag in post.info.tags
+                      span.post__info-tag= tag
+            .post__body
+              .post__text
+                p
+                  span= post.text
+                  button.post__more(type='button') (More...)

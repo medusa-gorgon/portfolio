@@ -82,6 +82,7 @@
 
   &__text {
     @include font;
+    font-size: rem(22px);
     color: $color_text;
 
     strong {

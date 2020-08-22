@@ -1,3 +1,7 @@
 .blog {
   background: url('/images/blog/bg.png') center / cover no-repeat;
+
+  &__posts {
+    margin-bottom: rem(20px);
+  }
 }
