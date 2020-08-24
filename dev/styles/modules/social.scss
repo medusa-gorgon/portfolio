@@ -1,0 +1,76 @@
+.social {
+  &__text {
+    @include font(500);
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: rem(43px);
+    line-height: 1;
+    color: $color_text_light;
+
+    &::after {
+      @include center(x);
+      position: absolute;
+      top: rem(47px);
+      display: block;
+      width: rem(60px);
+      height: rem(3px);
+      background-color: $color_text_light;
+      content: '';
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    padding: 0 rem(6px);
+  }
+
+  &__link {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(120px);
+    height: rem(120px);
+    font-size: rem(60px);
+    line-height: 1;
+    color: $color_main;
+    transition: all 0.3s;
+
+    @include haf {
+      color: $color_hover;
+
+      &::after {
+        border: solid rem(3px) $color_hover;
+      }
+    }
+
+    &::before {
+      @include center;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: $color_secondary;
+      content: '';
+    }
+
+    &::after {
+      @include center;
+      z-index: -1;
+      width: 90%;
+      height: 90%;
+      border: solid rem(3px) $color_main;
+      border-radius: 50%;
+      transition: all 0.3s;
+      content: '';
+    }
+  }
+}
