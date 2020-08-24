@@ -22,9 +22,11 @@
   }
 
   &_accent {
-    .section-head__title,
-    .section-head__desc {
-      color: $color_text_light;
+    .section-head {
+      &__title,
+      &__desc {
+        color: $color_text_light;
+      }
     }
 
     .ornament {

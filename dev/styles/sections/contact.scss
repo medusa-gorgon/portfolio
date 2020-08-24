@@ -1,7 +1,12 @@
 .contact {
   background: url('/images/contact/bg.png') center / cover no-repeat;
 
+  &__form {
+    width: 60%;
+    margin: 0 auto;
+  }
+
   &__social {
-    margin-top: rem(60px);
+    margin-top: rem(70px);
   }
 }

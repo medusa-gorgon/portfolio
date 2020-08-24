@@ -1,0 +1,17 @@
+.submit {
+  @include font;
+  display: block;
+  padding: rem(15px) rem(20px);
+  border-radius: rem(5px);
+  box-shadow: rem(2px) rem(2px) $color_shadow;
+  font-size: rem(26px);
+  line-height: 1.1;
+  color: $color_text;
+  background-color: $color_secondary;
+  transition: all 0.3s;
+
+  @include haf {
+    color: $color_text_light;
+    background-color: $color_hover;
+  }
+}

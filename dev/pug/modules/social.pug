@@ -1,8 +1,7 @@
 .social
   .social__text I am social
-  .social__links
-    ul.social__list
-      each item in social
-        li.social__item
-          a.social__link(href='#')
-            span(class=item.icon title=item.iconAlt aria-label=item.iconAlt)
+  ul.social__list
+    each item in social
+      li.social__item
+        a.social__link(href='#')
+          span(class=item.icon title=item.iconAlt aria-label=item.iconAlt)

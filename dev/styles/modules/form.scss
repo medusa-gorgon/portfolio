@@ -1,35 +1,13 @@
 .form {
-  width: 60%;
-  margin: 0 auto;
+  &__fieldset {
+    margin-bottom: rem(15px);
 
-  &__text {
-    @include font(300);
-    width: 100%;
-    height: rem(60px);
-    padding: rem(10px);
-    margin-bottom: rem(12px);
-    border-radius: rem(4px);
-    font-size: rem(27px);
-    background-color: $color_secondary;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  &__message {
-    @include font(300);
-    width: 100%;
-    height: rem(250px);
-    padding: rem(10px);
-    margin-bottom: rem(12px);
-    border-radius: rem(4px);
-    font-size: rem(27px);
-    background-color: $color_secondary;
-  }
-
-  &__button {
-    display: block;
-    padding: rem(15px) rem(20px);
-    border-radius: rem(5px);
-    font-size: rem(27px);
-    color: $color_text;
-    background-color: $color_secondary;
+  &__submit {
+    margin-top: rem(15px);
   }
 }
