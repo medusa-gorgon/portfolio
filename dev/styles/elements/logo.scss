@@ -1,8 +1,9 @@
 .logo {
-  @include center(x);
-  z-index: 10;
-  top: 10%;
   max-width: rem(150px);
+
+  @include laptop {
+    max-width: rem(120px);
+  }
 
   &-img {
     @include img();
@@ -17,5 +18,9 @@
     color: $color_secondary;
     transform: translate(-50%, -50%);
     user-select: none;
+
+    @include laptop {
+      font-size: rem(86px);
+    }
   }
 }

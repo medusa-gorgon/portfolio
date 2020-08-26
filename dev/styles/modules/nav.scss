@@ -13,20 +13,49 @@
     color: $color_text_light;
     transition: all 0.3s;
 
+    @include laptop {
+      width: 50%;
+      padding: rem(5px) rem(30px);
+      text-align: center;
+      font-size: rem(35px);
+      line-height: rem(50px);
+    }
+
+    @include tablet {
+      font-size: rem(30px);
+      line-height: rem(40px);
+    }
+
     @include haf {
       color: $color_accent;
     }
 
     &:nth-child(odd) {
-      text-align: right;
+      @include desktop {
+        text-align: right;
+      }
+
+      @include laptop {
+        padding-right: rem(80px);
+      }
+    }
+
+    &:nth-child(even) {
+      @include laptop {
+        padding-left: rem(80px);
+      }
     }
 
     &:nth-child(4n-2) {
-      padding-right: rem(100px);
+      @include desktop {
+        padding-right: rem(100px);
+      }
     }
 
     &:nth-child(6n-3) {
-      padding-left: rem(100px);
+      @include desktop {
+        padding-left: rem(100px);
+      }
     }
   }
 }
