@@ -7,6 +7,10 @@
     &-wrapper {
       display: flex;
       padding: 0 rem(10px);
+
+      @include mobile {
+        padding: 0 rem(6px);
+      }
     }
 
     &-item {
@@ -14,6 +18,16 @@
       display: block;
       width: rem(15px);
       height: rem(15px);
+
+      @include laptop {
+        width: rem(12px);
+        height: rem(12px);
+      }
+
+      @include mobile {
+        width: rem(8px);
+        height: rem(8px);
+      }
 
       &::before,
       &::after {
@@ -24,6 +38,10 @@
         height: 100%;
         background-color: $color_text;
         content: '';
+
+        @include mobile {
+          width: rem(1px);
+        }
       }
 
       &::before {
@@ -40,5 +58,15 @@
     width: rem(60px);
     height: rem(3px);
     background-color: $color_text;
+
+    @include laptop {
+      width: rem(45px);
+      height: rem(2px);
+    }
+
+    @include mobile {
+      width: rem(25px);
+      height: rem(1px);
+    }
   }
 }

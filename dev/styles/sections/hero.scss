@@ -3,6 +3,10 @@
 
   &__head {
     margin-bottom: rem(55px);
+
+    @include mobile {
+      margin-bottom: rem(20px);
+    }
   }
 
   &__title {
@@ -13,10 +17,22 @@
     font-size: rem(150px);
     line-height: 1;
     color: $color_text_light;
+
+    @include laptop {
+      font-size: rem(85px);
+    }
+
+    @include mobile {
+      font-size: rem(45px);
+    }
   }
 
   &__quote {
     margin-top: rem(40px);
+
+    @include mobile {
+      margin-top: rem(20px);
+    }
 
     &-text {
       text-align: center;
@@ -25,8 +41,24 @@
       line-height: 1.1;
       color: $color_text_light;
 
+      @include laptop {
+        font-size: rem(34px);
+      }
+
+      @include mobile {
+        font-size: rem(24px);
+      }
+
       &_sub {
         font-size: rem(35px);
+
+        @include laptop {
+          font-size: rem(25px);
+        }
+
+        @include mobile {
+          font-size: rem(15px);
+        }
       }
     }
   }

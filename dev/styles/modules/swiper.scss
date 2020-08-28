@@ -2,12 +2,28 @@
   padding: rem(15px) rem(15px) 0 rem(15px);
   background-color: $color_secondary;
 
+  @include laptop {
+    padding: rem(10px) rem(10px) 0 rem(10px);
+  }
+
+  @include mobile {
+    padding: rem(7px) rem(7px) 0 rem(7px);
+  }
+
   &__slide {
     &-pic {
       width: 100%;
       height: rem(550px);
       background: center / cover no-repeat;
       text-indent: -9999px;
+
+      @include laptop {
+        height: rem(400px);
+      }
+
+      @include mobile {
+        height: rem(260px);
+      }
     }
 
     &-title {
@@ -16,6 +32,16 @@
       text-transform: uppercase;
       font-size: rem(30px);
       color: $color_text;
+
+      @include laptop {
+        padding: rem(5px) 0;
+        font-size: rem(20px);
+      }
+
+      @include mobile {
+        padding: rem(3px) 0;
+        font-size: rem(18px);
+      }
     }
   }
 
@@ -28,6 +54,16 @@
     border-radius: 50%;
     background-color: $color_secondary;
     cursor: pointer;
+
+    @include laptop {
+      width: rem(80px);
+      height: rem(80px);
+    }
+
+    @include mobile {
+      width: rem(55px);
+      height: rem(55px);
+    }
 
     @include haf {
       .swiper__button-icon {
@@ -42,8 +78,24 @@
       color: $color_main;
       transition: color 0.3s;
 
+      @include laptop {
+        font-size: rem(30px);
+      }
+
+      @include mobile {
+        font-size: rem(25px);
+      }
+
       &_prev {
         left: 55%;
+
+        @include laptop {
+          left: 65%;
+        }
+
+        @include mobile {
+          left: 55%;
+        }
       }
 
       &_next {
@@ -54,6 +106,10 @@
     &_prev {
       left: rem(-50px);
 
+      @include mobile {
+        left: rem(-30px);
+      }
+
       &::before {
         top: 50%;
         left: rem(40px);
@@ -62,6 +118,10 @@
 
     &_next {
       right: rem(-50px);
+
+      @include mobile {
+        right: rem(-30px);
+      }
 
       &::before {
         right: rem(40px);

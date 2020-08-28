@@ -1,6 +1,14 @@
 .section-head {
   margin-bottom: rem(40px);
 
+  @include laptop {
+    margin-bottom: rem(25px);
+  }
+
+  @include mobile {
+    margin-bottom: rem(10px);
+  }
+
   &__title {
     @include font;
     text-align: center;
@@ -9,6 +17,16 @@
     font-size: rem(150px);
     line-height: 1;
     color: $color_text;
+
+    @include laptop {
+      text-shadow: rem(10px) rem(2px) $color_shadow;
+      font-size: rem(85px);
+    }
+
+    @include mobile {
+      text-shadow: rem(6px) rem(1px) $color_shadow;
+      font-size: rem(45px);
+    }
   }
 
   &__desc {
@@ -19,6 +37,15 @@
     font-size: rem(30px);
     line-height: 1;
     color: $color_text;
+
+    @include laptop {
+      font-size: rem(20px);
+    }
+
+    @include mobile {
+      margin-top: rem(6px);
+      font-size: rem(10px);
+    }
   }
 
   &_accent {

@@ -1,4 +1,5 @@
 .ribbon {
+  position: relative;
   display: block;
   padding-top: rem(20px);
   text-align: center;
@@ -7,6 +8,11 @@
   &__dots {
     display: inline-flex;
     vertical-align: middle;
+
+    @include mobile {
+      vertical-align: top;
+      margin: 0 rem(10px);
+    }
 
     &-wrapper {
       display: inline-flex;
@@ -20,6 +26,17 @@
     margin: 0 rem(10px);
     border-radius: 50%;
     background-color: $color_ribbon;
+
+    @include laptop {
+      width: rem(5px);
+      height: rem(5px);
+    }
+
+    @include mobile {
+      width: rem(3px);
+      height: rem(3px);
+      margin: 0 rem(5px);
+    }
   }
 
   &__content {
@@ -28,37 +45,77 @@
   }
 
   &__edge {
-    $width_border_edge: rem(25px);
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    border: $width_border_edge solid $color_ribbon;
+    border: rem(25px) solid $color_ribbon;
+
+    @include laptop {
+      border-width: rem(20px);
+    }
+
+    @include mobile {
+      bottom: rem(10px);
+      border-width: rem(10px);
+    }
 
     &::after {
       position: absolute;
       z-index: 2;
-      bottom: -$width_border_edge;
+      bottom: rem(-25px);
       display: inline-block;
-      vertical-align: bottom;
       border: rem(13px) solid transparent;
       content: '';
+
+      @include laptop {
+        bottom: rem(-20px);
+      }
+
+      @include mobile {
+        bottom: rem(-10px);
+        border-width: rem(6px);
+      }
     }
 
     &_right {
       border-right-color: transparent;
 
+      @include mobile {
+        left: rem(6px);
+      }
+
       &::after {
-        left: -$width_border_edge;
+        left: rem(-25px);
         border-left-color: $color_accent_dark;
+
+        @include laptop {
+          left: rem(-20px);
+        }
+
+        @include mobile {
+          left: rem(-10px);
+        }
       }
     }
 
     &_left {
       border-left-color: transparent;
 
+      @include mobile {
+        right: rem(6px);
+      }
+
       &::after {
-        right: -$width_border_edge;
+        right: rem(-25px);
         border-right-color: $color_accent_dark;
+
+        @include laptop {
+          right: rem(-20px);
+        }
+
+        @include mobile {
+          right: rem(-10px);
+        }
       }
     }
   }
@@ -76,6 +133,33 @@
     margin: rem(-20px) rem(-17px) 0;
     box-shadow: rem(2px) rem(4px) rem(10px) 0 $color_shadow;
     background-color: $color_ribbon;
+
+    @include laptop {
+      min-width: rem(250px);
+      height: rem(45px);
+    }
+
+    @include mobile {
+      min-width: rem(150px);
+      height: rem(25px);
+      padding: 0 rem(10px);
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      z-index: 4;
+      top: 5%;
+      left: 0;
+      display: block;
+      width: 100%;
+      border-top: 1px dashed rgba($color_stitch, 0.7);
+      content: '';
+    }
+
+    &::after {
+      top: 95%;
+    }
   }
 
   &__text {
@@ -83,5 +167,13 @@
     font-size: rem(36px);
     line-height: 1;
     color: $color_text;
+
+    @include laptop {
+      font-size: rem(28px);
+    }
+
+    @include mobile {
+      font-size: rem(18px);
+    }
   }
 }

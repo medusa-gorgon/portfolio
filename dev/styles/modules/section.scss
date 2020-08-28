@@ -14,14 +14,30 @@
 
   &::before {
     top: rem(16px);
+
+    @include mobile {
+      top: rem(9px);
+    }
   }
 
   &::after {
     bottom: rem(16px);
+
+    @include mobile {
+      bottom: rem(9px);
+    }
   }
 
   &__wrapper {
     padding: rem(80px) 0 rem(50px);
+
+    @include laptop {
+      padding: rem(50px) 0 rem(40px);
+    }
+
+    @include mobile {
+      padding: rem(25px) 0 rem(30px);
+    }
   }
 
   &_after-only {

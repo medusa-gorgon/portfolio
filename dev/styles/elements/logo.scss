@@ -1,8 +1,24 @@
 .logo {
+  position: relative;
   max-width: rem(150px);
 
   @include laptop {
     max-width: rem(120px);
+  }
+
+  &::after {
+    @include center;
+    position: absolute;
+    display: block;
+    width: rem(155px);
+    height: rem(155px);
+    background: url('/images//logo-brim.png') center / cover no-repeat;
+    content: '';
+
+    @include laptop {
+      width: rem(125px);
+      height: rem(125px);
+    }
   }
 
   &-img {
