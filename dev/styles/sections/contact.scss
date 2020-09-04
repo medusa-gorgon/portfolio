@@ -4,9 +4,21 @@
   &__form {
     width: 60%;
     margin: 0 auto;
+
+    @include mobile {
+      width: 80%;
+    }
   }
 
   &__social {
     margin-top: rem(70px);
+
+    @include tablet {
+      margin-top: rem(40px);
+    }
+
+    @include mobile {
+      margin-top: rem(30px);
+    }
   }
 }

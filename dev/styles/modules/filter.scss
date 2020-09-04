@@ -1,23 +1,81 @@
 .filter {
+  position: relative;
   display: flex;
 
   &-title {
     @include font;
-    flex-shrink: 0;
     margin-right: rem(25px);
     font-size: rem(28px);
     color: $color_text;
+    flex-shrink: 0;
+    user-select: none;
+
+    @include laptop {
+      font-size: rem(22px);
+    }
+
+    @include mobile {
+      position: relative;
+      cursor: pointer;
+
+      @include haf {
+        &::after {
+          top: 12px;
+          border-top-color: $color_main;
+          border-left-color: transparent;
+        }
+
+        + .filter-list {
+          // left: 50px;
+          opacity: 1;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        top: 8px;
+        left: 87px;
+        display: block;
+        width: 0;
+        height: 0;
+        border: solid rem(7px) transparent;
+        transition: all 0.1s;
+        content: '';
+        cursor: pointer;
+        border-left-color: $color_main;
+
+        // &:active {
+        //   border-top-color: $color_main;
+        //   border-left-color: transparent;
+        //   top: 12px;
+        // }
+      }
+    }
   }
 
   &-list {
     display: flex;
     flex-wrap: wrap;
     margin: 0 rem(-10px) rem(-15px);
+
+    @include mobile {
+      z-index: 9;
+      opacity: 0;
+      flex-direction: column;
+      // position: absolute;
+      // left: -9999px;
+      margin: 0 rem(-6px) rem(-15px);
+      transition: all 0.2s;
+    }
   }
 
   &-item {
     padding: 0 rem(10px);
     margin-bottom: rem(15px);
+
+    @include laptop {
+      padding: 0 rem(6px);
+    }
   }
 
   &-tag {
@@ -30,10 +88,15 @@
     line-height: 1.1;
     color: $color_text;
     background-color: $color_secondary;
+    transition: all 0.3s;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     white-space: nowrap;
-    transition: all 0.3s;
+
+    @include laptop {
+      padding: 7px 4px 5px 13px;
+      font-size: rem(15px);
+    }
 
     @include haf {
       color: $color_secondary;
@@ -56,9 +119,14 @@
       width: 0;
       height: 0;
       border: solid rem(18px) transparent;
-      border-right-color: $color_secondary;
       transition: all 0.3s;
       content: '';
+      border-right-color: $color_secondary;
+
+      @include laptop {
+        left: rem(-28px);
+        border-width: rem(14px);
+      }
     }
 
     &::after {

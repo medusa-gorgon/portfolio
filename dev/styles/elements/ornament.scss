@@ -25,8 +25,8 @@
       }
 
       @include mobile {
-        width: rem(8px);
-        height: rem(8px);
+        width: rem(10px);
+        height: rem(10px);
       }
 
       &::before,
@@ -38,10 +38,6 @@
         height: 100%;
         background-color: $color_text;
         content: '';
-
-        @include mobile {
-          width: rem(1px);
-        }
       }
 
       &::before {
@@ -65,8 +61,8 @@
     }
 
     @include mobile {
-      width: rem(25px);
-      height: rem(1px);
+      width: rem(35px);
+      height: rem(3px);
     }
   }
 }

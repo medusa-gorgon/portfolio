@@ -10,6 +10,15 @@
     line-height: 1.1;
     color: $color_text_light;
 
+    @include tablet {
+      font-size: rem(35px);
+    }
+
+    @include mobile {
+      margin-bottom: rem(20px);
+      font-size: rem(27px);
+    }
+
     &::after {
       @include center(x);
       position: absolute;
@@ -19,6 +28,14 @@
       height: rem(3px);
       background-color: $color_text_light;
       content: '';
+
+      @include tablet {
+        width: rem(50px);
+      }
+
+      @include mobile {
+        width: rem(40px);
+      }
     }
   }
 
@@ -32,6 +49,10 @@
   &__item {
     padding: 0 rem(8px);
     margin-bottom: rem(16px);
+
+    @include mobile {
+      padding: 0 rem(5px);
+    }
   }
 
   &__link {
@@ -46,6 +67,18 @@
     line-height: 1;
     color: $color_main;
     transition: all 0.3s;
+
+    @include tablet {
+      width: rem(80px);
+      height: rem(80px);
+      font-size: rem(40px);
+    }
+
+    @include mobile {
+      width: rem(50px);
+      height: rem(50px);
+      font-size: rem(25px);
+    }
 
     @include haf {
       color: $color_hover;
@@ -73,6 +106,11 @@
       border-radius: 50%;
       transition: all 0.3s;
       content: '';
+
+      @include mobile {
+        width: 85%;
+        height: 85%;
+      }
     }
   }
 }

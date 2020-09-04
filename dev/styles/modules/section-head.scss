@@ -6,7 +6,7 @@
   }
 
   @include mobile {
-    margin-bottom: rem(10px);
+    margin-bottom: rem(20px);
   }
 
   &__title {
@@ -24,8 +24,8 @@
     }
 
     @include mobile {
-      text-shadow: rem(6px) rem(1px) $color_shadow;
-      font-size: rem(45px);
+      text-shadow: rem(7px) rem(1px) $color_shadow;
+      font-size: rem(60px);
     }
   }
 
@@ -43,8 +43,7 @@
     }
 
     @include mobile {
-      margin-top: rem(6px);
-      font-size: rem(10px);
+      font-size: rem(15px);
     }
   }
 
