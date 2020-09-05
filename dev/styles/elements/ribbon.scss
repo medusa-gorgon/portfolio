@@ -10,8 +10,7 @@
     vertical-align: middle;
 
     @include mobile {
-      vertical-align: top;
-      margin: 0 rem(10px);
+      display: none;
     }
 
     &-wrapper {
@@ -31,12 +30,6 @@
       width: rem(5px);
       height: rem(5px);
     }
-
-    @include mobile {
-      width: rem(3px);
-      height: rem(3px);
-      margin: 0 rem(5px);
-    }
   }
 
   &__content {
@@ -55,8 +48,7 @@
     }
 
     @include mobile {
-      bottom: rem(10px);
-      border-width: rem(10px);
+      border-width: rem(17.5px);
     }
 
     &::after {
@@ -72,17 +64,12 @@
       }
 
       @include mobile {
-        bottom: rem(-10px);
-        border-width: rem(6px);
+        bottom: rem(-17.5px);
       }
     }
 
     &_right {
       border-right-color: transparent;
-
-      @include mobile {
-        left: rem(6px);
-      }
 
       &::after {
         left: rem(-25px);
@@ -93,17 +80,13 @@
         }
 
         @include mobile {
-          left: rem(-10px);
+          left: rem(-17.5px);
         }
       }
     }
 
     &_left {
       border-left-color: transparent;
-
-      @include mobile {
-        right: rem(6px);
-      }
 
       &::after {
         right: rem(-25px);
@@ -114,7 +97,7 @@
         }
 
         @include mobile {
-          right: rem(-10px);
+          right: rem(-17.5px);
         }
       }
     }
@@ -136,12 +119,12 @@
 
     @include laptop {
       min-width: rem(250px);
-      height: rem(45px);
+      height: rem(48px);
     }
 
     @include mobile {
-      min-width: rem(150px);
-      height: rem(25px);
+      min-width: rem(200px);
+      height: rem(42px);
       padding: 0 rem(10px);
     }
 
@@ -149,7 +132,6 @@
     &::after {
       position: absolute;
       z-index: 4;
-      top: 5%;
       left: 0;
       display: block;
       width: 100%;
@@ -157,8 +139,12 @@
       content: '';
     }
 
+    &::before {
+      top: 3px;
+    }
+
     &::after {
-      top: 95%;
+      bottom: 3px;
     }
   }
 
@@ -173,7 +159,7 @@
     }
 
     @include mobile {
-      font-size: rem(18px);
+      font-size: rem(24px);
     }
   }
 }

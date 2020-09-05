@@ -2,12 +2,8 @@
   padding: rem(15px) rem(15px) 0 rem(15px);
   background-color: $color_secondary;
 
-  @include laptop {
-    padding: rem(10px) rem(10px) 0 rem(10px);
-  }
-
   @include mobile {
-    padding: rem(7px) rem(7px) 0 rem(7px);
+    padding: rem(10px) rem(10px) 0 rem(10px);
   }
 
   &__slide {
@@ -18,11 +14,11 @@
       text-indent: -9999px;
 
       @include laptop {
-        height: rem(400px);
+        height: rem(450px);
       }
 
       @include mobile {
-        height: rem(260px);
+        height: rem(300px);
       }
     }
 
@@ -33,14 +29,8 @@
       font-size: rem(30px);
       color: $color_text;
 
-      @include laptop {
-        padding: rem(5px) 0;
-        font-size: rem(20px);
-      }
-
       @include mobile {
-        padding: rem(3px) 0;
-        font-size: rem(18px);
+        font-size: rem(24px);
       }
     }
   }
@@ -61,8 +51,8 @@
     }
 
     @include mobile {
-      width: rem(55px);
-      height: rem(55px);
+      width: rem(50px);
+      height: rem(50px);
     }
 
     @include haf {
@@ -72,18 +62,18 @@
     }
 
     &-icon {
-      position: absolute;
-      top: 25%;
+      @include center(y);
       font-size: rem(40px);
+      line-height: 1;
       color: $color_main;
       transition: color 0.3s;
 
       @include laptop {
-        font-size: rem(30px);
+        font-size: rem(32px);
       }
 
       @include mobile {
-        font-size: rem(25px);
+        font-size: rem(24px);
       }
 
       &_prev {
@@ -94,12 +84,20 @@
         }
 
         @include mobile {
-          left: 55%;
+          left: 60%;
         }
       }
 
       &_next {
-        left: 15%;
+        right: 55%;
+
+        @include laptop {
+          right: 65%;
+        }
+
+        @include laptop {
+          right: 60%;
+        }
       }
     }
 
@@ -109,11 +107,6 @@
       @include mobile {
         left: rem(-30px);
       }
-
-      &::before {
-        top: 50%;
-        left: rem(40px);
-      }
     }
 
     &_next {
@@ -121,11 +114,6 @@
 
       @include mobile {
         right: rem(-30px);
-      }
-
-      &::before {
-        right: rem(40px);
-        bottom: 50%;
       }
     }
   }
