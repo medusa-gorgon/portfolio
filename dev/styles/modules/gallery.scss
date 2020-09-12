@@ -3,12 +3,22 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 rem(-15px) rem(-30px);
+
+    @include laptop {
+      margin: 0 rem(-10px) rem(-20px);
+    }
   }
 
   &__item {
     width: 25%;
     padding: 0 rem(15px);
     margin-bottom: rem(30px);
+
+    @include laptop {
+      width: 33.333333333%;
+      padding: 0 rem(10px);
+      margin-bottom: rem(20px);
+    }
 
     @include tablet {
       width: 50%;
@@ -26,6 +36,10 @@
     box-shadow: rem(1px) rem(-1px) rem(3px) $color_shadow;
     background-color: $color_secondary;
     transition: all 0.3s;
+
+    @include mobile {
+      padding-bottom: rem(10px);
+    }
 
     @include haf {
       background-color: $color_main;
@@ -47,6 +61,10 @@
     width: 100%;
     height: rem(300px);
     background: center / cover no-repeat;
+
+    @include mobile {
+      height: rem(250px);
+    }
   }
 
   &__info {

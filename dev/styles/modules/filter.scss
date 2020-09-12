@@ -1,6 +1,11 @@
 .filter {
   position: relative;
   display: flex;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+  }
 
   &-title {
     @include font;
@@ -14,42 +19,13 @@
       font-size: rem(22px);
     }
 
+    @include tablet {
+      margin-right: rem(15px);
+    }
+
     @include mobile {
-      position: relative;
-      cursor: pointer;
-
-      @include haf {
-        &::after {
-          top: 12px;
-          border-top-color: $color_main;
-          border-left-color: transparent;
-        }
-
-        + .filter-list {
-          // left: 50px;
-          opacity: 1;
-        }
-      }
-
-      &::after {
-        position: absolute;
-        top: 8px;
-        left: 87px;
-        display: block;
-        width: 0;
-        height: 0;
-        border: solid rem(7px) transparent;
-        transition: all 0.1s;
-        content: '';
-        cursor: pointer;
-        border-left-color: $color_main;
-
-        // &:active {
-        //   border-top-color: $color_main;
-        //   border-left-color: transparent;
-        //   top: 12px;
-        // }
-      }
+      margin-right: 0;
+      margin-bottom: rem(10px);
     }
   }
 
@@ -59,13 +35,7 @@
     margin: 0 rem(-10px) rem(-15px);
 
     @include mobile {
-      z-index: 9;
-      opacity: 0;
-      flex-direction: column;
-      // position: absolute;
-      // left: -9999px;
-      margin: 0 rem(-6px) rem(-15px);
-      transition: all 0.2s;
+      margin: 0 rem(-5px) rem(-10px);
     }
   }
 
@@ -73,8 +43,9 @@
     padding: 0 rem(10px);
     margin-bottom: rem(15px);
 
-    @include laptop {
-      padding: 0 rem(6px);
+    @include mobile {
+      padding: 0 rem(5px);
+      margin-bottom: rem(10px);
     }
   }
 
@@ -92,11 +63,6 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     white-space: nowrap;
-
-    @include laptop {
-      padding: 7px 4px 5px 13px;
-      font-size: rem(15px);
-    }
 
     @include haf {
       color: $color_secondary;
@@ -122,11 +88,6 @@
       transition: all 0.3s;
       content: '';
       border-right-color: $color_secondary;
-
-      @include laptop {
-        left: rem(-28px);
-        border-width: rem(14px);
-      }
     }
 
     &::after {
