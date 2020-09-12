@@ -2,11 +2,7 @@
   @extend .input;
   min-height: rem(250px);
 
-  @include tablet {
-    min-height: rem(150px);
-  }
-
-  @include mobile {
-    min-height: rem(100px);
+  @include laptop {
+    min-height: rem(200px);
   }
 }
