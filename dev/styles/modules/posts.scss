@@ -2,6 +2,10 @@
   &__item {
     margin-bottom: rem(40px);
 
+    @include laptop {
+      margin-bottom: rem(30px);
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -12,7 +16,7 @@
   display: flex;
   margin: 0 rem(-15px);
 
-  @include tablet {
+  @include mobile {
     flex-direction: column;
   }
 
@@ -21,6 +25,10 @@
     padding: 0 rem(15px);
 
     @include tablet {
+      width: 40%;
+    }
+
+    @include mobile {
       width: 100%;
     }
 
@@ -32,8 +40,8 @@
       border: rem(6px) solid $color_secondary;
       border-radius: rem(5px);
 
-      @include mobile {
-        height: rem(280px);
+      @include laptop {
+        height: rem(300px);
       }
 
       @include haf {
@@ -56,6 +64,10 @@
     padding: 0 rem(15px);
 
     @include tablet {
+      width: 60%;
+    }
+
+    @include mobile {
       width: 100%;
     }
   }
@@ -99,20 +111,22 @@
     line-height: 1.1;
     color: $color_text;
     transition: 0.3s;
+
+    @include laptop {
+      font-size: rem(30px);
+    }
   }
 
   &__info {
-    display: flex;
     margin-top: rem(10px);
-    font-size: rem(18px);
-    line-height: 1.1;
-    color: $color_text;
-
-    @include mobile {
-      font-size: rem(14px);
-    }
 
     &-item {
+      display: inline;
+      font-size: rem(18px);
+      line-height: 1.1;
+      color: $color_text;
+      word-break: break-word;
+
       &::after {
         padding: 0 rem(5px);
         content: '//';
@@ -144,8 +158,8 @@
     font-size: rem(30px);
     color: $color_text;
 
-    @include mobile {
-      font-size: rem(21px);
+    @include laptop {
+      font-size: rem(20px);
     }
   }
 
@@ -156,8 +170,8 @@
     color: $color_text;
     transition: 0.3s;
 
-    @include mobile {
-      font-size: rem(17px);
+    @include laptop {
+      font-size: rem(18px);
     }
 
     @include haf {
