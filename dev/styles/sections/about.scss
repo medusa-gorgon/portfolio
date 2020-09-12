@@ -5,6 +5,15 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 rem(-15px) rem(-40px);
+
+    @include laptop {
+      margin-right: rem(-20px);
+      margin-left: rem(-20px);
+    }
+
+    @include mobile {
+      margin-bottom: rem(-30px);
+    }
   }
 
   &__item {
@@ -13,7 +22,12 @@
     margin-bottom: rem(40px);
 
     @include laptop {
-      padding: 0 rem(9px);
+      width: 33.333333333%;
+      padding: 0 rem(20px);
+    }
+
+    @include tablet {
+      width: 50%;
     }
 
     @include mobile {
@@ -36,15 +50,15 @@
     color: $color_secondary;
 
     @include laptop {
-      width: rem(140px);
-      height: rem(140px);
+      width: rem(150px);
+      height: rem(150px);
       font-size: rem(70px);
     }
 
     @include mobile {
-      width: rem(150px);
-      height: rem(150px);
-      font-size: rem(65px);
+      width: rem(110px);
+      height: rem(110px);
+      font-size: rem(50px);
     }
 
     &::before {
@@ -66,13 +80,13 @@
       content: '';
 
       @include laptop {
-        width: rem(125px);
-        height: rem(125px);
+        width: rem(135px);
+        height: rem(135px);
       }
 
       @include mobile {
-        width: rem(135px);
-        height: rem(135px);
+        width: rem(95px);
+        height: rem(95px);
       }
     }
   }
@@ -87,7 +101,7 @@
     color: $color_text;
 
     @include laptop {
-      font-size: rem(25px);
+      font-size: rem(36px);
     }
 
     @include mobile {
@@ -106,17 +120,6 @@
     line-height: 1;
     color: $color_text;
 
-    @include laptop {
-      padding-bottom: rem(13px);
-      font-size: rem(13px);
-    }
-
-    @include mobile {
-      // padding-bottom: rem(4px);
-      // margin-bottom: rem(6px);
-      font-size: rem(13px);
-    }
-
     &::after {
       @include center(x);
       position: absolute;
@@ -126,16 +129,6 @@
       height: rem(4px);
       background-color: $color_text;
       content: '';
-
-      @include laptop {
-        width: rem(40px);
-        height: rem(3px);
-      }
-
-      @include mobile {
-        width: rem(35px);
-        height: rem(3px);
-      }
     }
   }
 
@@ -145,12 +138,7 @@
     color: $color_text;
 
     @include laptop {
-      font-size: rem(18px);
-    }
-
-    @include mobile {
-      padding: 0 rem(10px);
-      font-size: rem(15px);
+      font-size: rem(20px);
     }
 
     strong {

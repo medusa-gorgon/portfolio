@@ -19,11 +19,6 @@
       width: rem(15px);
       height: rem(15px);
 
-      @include laptop {
-        width: rem(12px);
-        height: rem(12px);
-      }
-
       @include mobile {
         width: rem(10px);
         height: rem(10px);
@@ -54,11 +49,6 @@
     width: rem(60px);
     height: rem(3px);
     background-color: $color_text;
-
-    @include laptop {
-      width: rem(45px);
-      height: rem(2px);
-    }
 
     @include mobile {
       width: rem(35px);
