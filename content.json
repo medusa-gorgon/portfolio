@@ -1,5 +1,22 @@
 {
-  "nav": ["About me", "Portfolio", "My blog", "Contact me"],
+  "nav": [
+    {
+      "text": "About me",
+      "href": "about"
+    },
+    {
+      "text": "Portfolio",
+      "href": "portfolio"
+    },
+    {
+      "text": "My blog",
+      "href": "blog"
+    },
+    {
+      "text": "Contact me",
+      "href": "contact"
+    }
+  ],
   "heroSlides": [
     {
       "src": "images/hero/slider/forest.jpg",
@@ -187,6 +204,33 @@
     {
       "icon": "fab fa-linkedin-in",
       "iconAlt": "linkedin"
+    }
+  ],
+  "menu": [
+    {
+      "icon": "fas fa-home",
+      "iconAlt": "home",
+      "text": "Home"
+    },
+    {
+      "icon": "fas fa-address-card",
+      "iconAlt": "about",
+      "text": "About me"
+    },
+    {
+      "icon": "fas fa-images",
+      "iconAlt": "portfolio",
+      "text": "Portfolio"
+    },
+    {
+      "icon": "fas fa-pen-square",
+      "iconAlt": "blog",
+      "text": "My blog"
+    },
+    {
+      "icon": "fas fa-phone-square",
+      "iconAlt": "contact",
+      "text": "Contact me"
     }
   ]
 }

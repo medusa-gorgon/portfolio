@@ -4,7 +4,7 @@
       each slide in heroSlides
         .swiper-slide
           .swiper__slide
-            .swiper__slide-pic(style=`background-image:url('${slide.src}')`)= slide.alt
+            .swiper__slide-pic(style=`background-image:url('${slide.src}')` title=slide.alt alt=slide.alt)= slide.alt
             .swiper__slide-title= slide.alt
     button.swiper__button.swiper__button_prev(type='button')
       .swiper__button-icon.swiper__button-icon_prev

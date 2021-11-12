@@ -16,12 +16,33 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<div class="header__nav">
-						<nav class="nav"><a class="nav-link" href="#">About me</a><a class="nav-link" href="#">Portfolio</a><a class="nav-link" href="#">My blog</a><a class="nav-link" href="#">Contact me</a>
+						<nav class="nav"><a class="nav-link" href="#about" id="about">About me</a><a class="nav-link" href="#portfolio" id="portfolio">Portfolio</a><a class="nav-link" href="#blog" id="blog">My blog</a><a class="nav-link" href="#contact" id="contact">Contact me</a>
 						</nav>
 					</div>
 					<div class="header__logo">
 						<div class="logo"><img class="logo-img" src="./images/logo-bg.png" alt="Logo background">
 							<div class="logo-letter">M</div>
+						</div>
+					</div>
+					<div class="menu">
+						<div class="menu__wrapper">
+							<ul class="menu__list">
+								<li class="menu__item"><a class="menu__link" href="#home" id="home">
+										<div class="menu-pic"><span class="fas fa-home" title="home" aria-label="home"></span></div>
+										<div class="menu__text">Home</div></a></li>
+								<li class="menu__item"><a class="menu__link" href="#about" id="about">
+										<div class="menu-pic"><span class="fas fa-address-card" title="about" aria-label="about"></span></div>
+										<div class="menu__text">About me</div></a></li>
+								<li class="menu__item"><a class="menu__link" href="#portfolio" id="portfolio">
+										<div class="menu-pic"><span class="fas fa-images" title="portfolio" aria-label="portfolio"></span></div>
+										<div class="menu__text">Portfolio</div></a></li>
+								<li class="menu__item"><a class="menu__link" href="#blog" id="blog">
+										<div class="menu-pic"><span class="fas fa-pen-square" title="blog" aria-label="blog"></span></div>
+										<div class="menu__text">My blog</div></a></li>
+								<li class="menu__item"><a class="menu__link" href="#contact" id="contact">
+										<div class="menu-pic"><span class="fas fa-phone-square" title="contact" aria-label="contact"></span></div>
+										<div class="menu__text">Contact me</div></a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -67,37 +88,37 @@
 									<div class="swiper-wrapper">
 										<div class="swiper-slide">
 											<div class="swiper__slide">
-												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/forest.jpg')">Forest life</div>
+												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/forest.jpg')" title="Forest life" alt="Forest life">Forest life</div>
 												<div class="swiper__slide-title">Forest life</div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="swiper__slide">
-												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/singapore.jpg')">Gardens by the Bay</div>
+												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/singapore.jpg')" title="Gardens by the Bay" alt="Gardens by the Bay">Gardens by the Bay</div>
 												<div class="swiper__slide-title">Gardens by the Bay</div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="swiper__slide">
-												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/meadow.jpg')">Yellow meadow</div>
+												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/meadow.jpg')" title="Yellow meadow" alt="Yellow meadow">Yellow meadow</div>
 												<div class="swiper__slide-title">Yellow meadow</div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="swiper__slide">
-												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/tea.jpg')">Good morning</div>
+												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/tea.jpg')" title="Good morning" alt="Good morning">Good morning</div>
 												<div class="swiper__slide-title">Good morning</div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="swiper__slide">
-												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/dandelions.jpg')">Dandelions</div>
+												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/dandelions.jpg')" title="Dandelions" alt="Dandelions">Dandelions</div>
 												<div class="swiper__slide-title">Dandelions</div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="swiper__slide">
-												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/cornflowers.jpg')">Cornflowers</div>
+												<div class="swiper__slide-pic" style="background-image:url('images/hero/slider/cornflowers.jpg')" title="Cornflowers" alt="Cornflowers">Cornflowers</div>
 												<div class="swiper__slide-title">Cornflowers</div>
 											</div>
 										</div>
@@ -230,7 +251,7 @@
 							<div class="gallery">
 								<ul class="gallery__list">
 									<li class="gallery__item"><a class="gallery__project" href="#">
-											<div class="gallery__pic" style="background-image: url('images/hero/slider/forest.jpg')"></div>
+											<div class="gallery__pic" style="background-image: url('images/hero/slider/forest.jpg')" title="Galleries are funny" alt="Galleries are funny"></div>
 											<div class="gallery__info">
 												<div class="gallery__icon-wrapper">
 													<div class="gallery__icon"><span class="fas fa-camera-retro" aria-label="Camera"></span></div>
@@ -238,7 +259,7 @@
 												<div class="gallery__title">Galleries are funny</div>
 											</div></a></li>
 									<li class="gallery__item"><a class="gallery__project" href="#">
-											<div class="gallery__pic" style="background-image: url('images/hero/slider/singapore.jpg')"></div>
+											<div class="gallery__pic" style="background-image: url('images/hero/slider/singapore.jpg')" title="A vimeo reel" alt="A vimeo reel"></div>
 											<div class="gallery__info">
 												<div class="gallery__icon-wrapper">
 													<div class="gallery__icon"><span class="fas fa-laptop" aria-label="Laptop"></span></div>
@@ -246,7 +267,7 @@
 												<div class="gallery__title">A vimeo reel</div>
 											</div></a></li>
 									<li class="gallery__item"><a class="gallery__project" href="#">
-											<div class="gallery__pic" style="background-image: url('images/hero/slider/meadow.jpg')"></div>
+											<div class="gallery__pic" style="background-image: url('images/hero/slider/meadow.jpg')" title="Love for old cameras" alt="Love for old cameras"></div>
 											<div class="gallery__info">
 												<div class="gallery__icon-wrapper">
 													<div class="gallery__icon"><span class="fas fa-volume-up" aria-label="Volume up"></span></div>
@@ -254,7 +275,7 @@
 												<div class="gallery__title">Love for old cameras</div>
 											</div></a></li>
 									<li class="gallery__item"><a class="gallery__project" href="#">
-											<div class="gallery__pic" style="background-image: url('images/hero/slider/tea.jpg')"></div>
+											<div class="gallery__pic" style="background-image: url('images/hero/slider/tea.jpg')" title="Detailed project page" alt="Detailed project page"></div>
 											<div class="gallery__info">
 												<div class="gallery__icon-wrapper">
 													<div class="gallery__icon"><span class="far fa-sticky-note" aria-label="Notes"></span></div>
@@ -262,7 +283,7 @@
 												<div class="gallery__title">Detailed project page</div>
 											</div></a></li>
 									<li class="gallery__item"><a class="gallery__project" href="#">
-											<div class="gallery__pic" style="background-image: url('images/hero/slider/dandelions.jpg')"></div>
+											<div class="gallery__pic" style="background-image: url('images/hero/slider/dandelions.jpg')" title="YouTube video" alt="YouTube video"></div>
 											<div class="gallery__info">
 												<div class="gallery__icon-wrapper">
 													<div class="gallery__icon"><span class="fas fa-laptop" aria-label="Laptop"></span></div>
@@ -270,7 +291,7 @@
 												<div class="gallery__title">YouTube video</div>
 											</div></a></li>
 									<li class="gallery__item"><a class="gallery__project" href="#">
-											<div class="gallery__pic" style="background-image: url('images/hero/slider/forest.jpg')"></div>
+											<div class="gallery__pic" style="background-image: url('images/hero/slider/forest.jpg')" title="Another external link" alt="Another external link"></div>
 											<div class="gallery__info">
 												<div class="gallery__icon-wrapper">
 													<div class="gallery__icon"><span class="fas fa-paperclip" aria-label="Paperclip"></span></div>
@@ -278,7 +299,7 @@
 												<div class="gallery__title">Another external link</div>
 											</div></a></li>
 									<li class="gallery__item"><a class="gallery__project" href="#">
-											<div class="gallery__pic" style="background-image: url('images/hero/slider/forest.jpg')"></div>
+											<div class="gallery__pic" style="background-image: url('images/hero/slider/forest.jpg')" title="A lightbox image" alt="A lightbox image"></div>
 											<div class="gallery__info">
 												<div class="gallery__icon-wrapper">
 													<div class="gallery__icon"><span class="fas fa-camera-retro" aria-label="Camera"></span></div>
@@ -286,7 +307,7 @@
 												<div class="gallery__title">A lightbox image</div>
 											</div></a></li>
 									<li class="gallery__item"><a class="gallery__project" href="#">
-											<div class="gallery__pic" style="background-image: url('images/hero/slider/forest.jpg')"></div>
+											<div class="gallery__pic" style="background-image: url('images/hero/slider/forest.jpg')" title="The dark tempest" alt="The dark tempest"></div>
 											<div class="gallery__info">
 												<div class="gallery__icon-wrapper">
 													<div class="gallery__icon"><span class="fas fa-volume-up" aria-label="Volume up"></span></div>
@@ -332,7 +353,7 @@
 									<li class="posts__item">
 										<div class="post">
 											<div class="post__pic"><a class="post__pic-link" href="#">
-													<div class="post__img" style="background-image: url('images/hero/slider/tea.jpg')" aria-label="tea in the morning"></div></a></div>
+													<div class="post__img" style="background-image: url('images/hero/slider/tea.jpg')" aria-label="tea in the morning" alt="tea in the morning" title="tea in the morning"></div></a></div>
 											<div class="post__content">
 												<div class="post__head"><a class="post__head-link" href="#">
 														<h3 class="post__title">The Magic Wheel</h3>
@@ -355,7 +376,7 @@
 									<li class="posts__item">
 										<div class="post">
 											<div class="post__pic"><a class="post__pic-link" href="#">
-													<div class="post__img" style="background-image: url('images/hero/slider/cornflowers.jpg')" aria-label="blue conrflowers"></div></a></div>
+													<div class="post__img" style="background-image: url('images/hero/slider/cornflowers.jpg')" aria-label="blue conrflowers" alt="blue conrflowers" title="blue conrflowers"></div></a></div>
 											<div class="post__content">
 												<div class="post__head"><a class="post__head-link" href="#">
 														<h3 class="post__title">The lonely road</h3>
@@ -378,7 +399,7 @@
 									<li class="posts__item">
 										<div class="post">
 											<div class="post__pic"><a class="post__pic-link" href="#">
-													<div class="post__img" style="background-image: url('images/hero/slider/meadow.jpg')" aria-label="yellow meadow"></div></a></div>
+													<div class="post__img" style="background-image: url('images/hero/slider/meadow.jpg')" aria-label="yellow meadow" alt="yellow meadow" title="yellow meadow"></div></a></div>
 											<div class="post__content">
 												<div class="post__head"><a class="post__head-link" href="#">
 														<h3 class="post__title">I love gasoline smell</h3>

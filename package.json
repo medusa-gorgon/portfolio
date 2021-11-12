@@ -61,6 +61,11 @@
     "normalize.css": "~8.0.1",
     "swiper": "^5.4.1"
   },
+  "scripts": {
+    "eslint": "eslint --fix",
+    "pretty-quick": "pretty-quick --pattern",
+    "stylelint": "stylelint --fix"
+  },
   "lint-staged": {
     "dev/js/**/*.js": [
       "pretty-quick --pattern './dev/js/**/*.js'",

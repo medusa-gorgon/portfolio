@@ -1,0 +1,13 @@
+.menu
+  .menu__wrapper
+    ul.menu__list
+      each section in menu
+        li.menu__item
+            a.menu__link(href=`#${section.iconAlt}` id =`${section.iconAlt}`)
+              .menu-pic
+                span(
+                  class=section.icon
+                  title=section.iconAlt
+                  aria-label=section.iconAlt
+                )
+              .menu__text=section.text

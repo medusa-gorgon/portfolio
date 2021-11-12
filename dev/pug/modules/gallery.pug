@@ -3,7 +3,7 @@
     each product in gallery
       li.gallery__item
         a.gallery__project(href='#')
-          .gallery__pic(style=`background-image: url('${product.src}')`)
+          .gallery__pic(style=`background-image: url('${product.src}')` title=product.desc alt=product.desc)
           .gallery__info
             .gallery__icon-wrapper
               .gallery__icon

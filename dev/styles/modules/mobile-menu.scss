@@ -1,0 +1,45 @@
+.menu {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+
+  &__list {
+    position: fixed;
+    bottom: 1px;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: $color_secondary;
+    transform: translateX(-50%);
+  }
+
+  &__item {
+    max-width: 20%;
+    min-width: 10%;
+    // display: flex;
+    text-align: center;
+  }
+
+  &__link {
+    color: #028080; //#006e6e
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color_accent_secondary;
+    }
+  }
+
+  &__text {
+    font-size: rem(15px);
+  }
+
+  &-pic {
+    font-size: rem(30px);
+    line-height: 0.8;
+  }
+}
