@@ -29,15 +29,28 @@ $.gulp.task(
     'sass',
     // 'js:vendor',
     // 'js:app',
-    'js:app-minify',
-    'fonts',
-    'images'
+    'js:app-minify'
+  )
+);
+
+$.gulp.task('dev:assets', $.gulp.parallel('dev:fonts', 'dev:images'));
+
+$.gulp.task('build:assets', $.gulp.parallel('build:fonts', 'build:images'));
+
+$.gulp.task(
+  'dev:images',
+  $.gulp.series(
+    'images:minify',
+    $.gulp.parallel('dev.images:sprite', 'dev.svg:sprite')
   )
 );
 
 $.gulp.task(
-  'core:images',
-  $.gulp.series('images:minify', $.gulp.parallel('images:sprite', 'svg:sprite'))
+  'build:images',
+  $.gulp.series(
+    'images:minify',
+    $.gulp.parallel('dev.images:sprite', 'dev.svg:sprite')
+  )
 );
 
 $.gulp.task(
@@ -46,10 +59,14 @@ $.gulp.task(
     'clean',
     'js:lint',
     'sass:lint',
-    'core:images',
+    'dev:images',
     'core',
+    'dev:assets',
     $.gulp.parallel('watch', 'serve')
   )
 );
 
-$.gulp.task('build', $.gulp.series('clean', 'core:images', 'core'));
+$.gulp.task(
+  'build',
+  $.gulp.series('clean', 'build:images', 'core', 'build:assets')
+);

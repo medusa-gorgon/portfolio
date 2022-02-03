@@ -5,35 +5,40 @@
 
 @font-face {
   font-family: '#{$font_name} Light';
-  src: url('../../fonts/#{$font-path_name}-Light.ttf') format('truetype');
+  src: url('../../portfolio/fonts/#{$font-path_name}-Light.ttf')
+    format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: '#{$font_name} Regular';
-  src: url('../../fonts/#{$font-path_name}-Regular.ttf') format('truetype');
+  src: url('../../portfolio/fonts/#{$font-path_name}-Regular.ttf')
+    format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: '#{$font_name} Bold';
-  src: url('../../fonts/#{$font-path_name}-Bold.ttf') format('truetype');
+  src: url('../../portfolio/fonts/#{$font-path_name}-Bold.ttf')
+    format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: '#{$font_name} Italic';
-  src: url('../../fonts/#{$font-path_name}-Italic.ttf') format('truetype');
+  src: url('../../portfolio/fonts/#{$font-path_name}-Italic.ttf')
+    format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: '#{$font_name} ShadowLine';
-  src: url('../../fonts/#{$font-path_name}-ShadowLine.ttf') format('truetype');
+  src: url('../../portfolio/fonts/#{$font-path_name}-ShadowLine.ttf')
+    format('truetype');
   font-style: normal;
   font-weight: normal;
 }

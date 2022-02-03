@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/mg-bizarre/portfolio.git"
   },
+  "homepage": "https://mg-bizarre.github.io/portfolio/",
   "keywords": [
     "portfolio"
   ],
@@ -64,7 +65,8 @@
   "scripts": {
     "eslint": "eslint --fix",
     "pretty-quick": "pretty-quick --pattern",
-    "stylelint": "stylelint --fix"
+    "stylelint": "stylelint --fix",
+    "deploy": "gh-pages -d build/portfolio"
   },
   "lint-staged": {
     "dev/js/**/*.js": [

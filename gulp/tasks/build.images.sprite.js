@@ -1,11 +1,11 @@
 module.exports = () => {
-  $.gulp.task('images:sprite', () => {
+  $.gulp.task('build.images:sprite', () => {
     const spriteData = $.gulp
-      .src(`${$.config.dev}/images/sprites/png/*.png`)
+      .src(`${$.config.dev}/portfolio/images/sprites/png/*.png`)
       .pipe(
         $.gp.spritesmith({
           imgName: 'sprite.png',
-          imgPath: '../images/sprites/sprite.png',
+          imgPath: '../portfolio/images/sprites/sprite.png',
           cssName: 'sprite.scss',
           cssFormat: 'css',
           padding: 5,

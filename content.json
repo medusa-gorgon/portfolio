@@ -19,27 +19,27 @@
   ],
   "heroSlides": [
     {
-      "src": "images/hero/slider/forest.jpg",
+      "src": "/portfolio/images/hero/slider/forest.jpg",
       "alt": "Forest life"
     },
     {
-      "src": "images/hero/slider/singapore.jpg",
+      "src": "/portfolio/images/hero/slider/singapore.jpg",
       "alt": "Gardens by the Bay"
     },
     {
-      "src": "images/hero/slider/meadow.jpg",
+      "src": "/portfolio/images/hero/slider/meadow.jpg",
       "alt": "Yellow meadow"
     },
     {
-      "src": "images/hero/slider/tea.jpg",
+      "src": "/portfolio/images/hero/slider/tea.jpg",
       "alt": "Good morning"
     },
     {
-      "src": "images/hero/slider/dandelions.jpg",
+      "src": "/portfolio/images/hero/slider/dandelions.jpg",
       "alt": "Dandelions"
     },
     {
-      "src": "images/hero/slider/cornflowers.jpg",
+      "src": "/portfolio/images/hero/slider/cornflowers.jpg",
       "alt": "Cornflowers"
     }
   ],
@@ -101,49 +101,49 @@
   ],
   "gallery": [
     {
-      "src": "images/hero/slider/forest.jpg",
+      "src": "/portfolio/images/hero/slider/forest.jpg",
       "icon": "fas fa-camera-retro",
       "iconAlt": "Camera",
       "desc": "Galleries are funny"
     },
     {
-      "src": "images/hero/slider/singapore.jpg",
+      "src": "/portfolio/images/hero/slider/singapore.jpg",
       "icon": "fas fa-laptop",
       "iconAlt": "Laptop",
       "desc": "A vimeo reel"
     },
     {
-      "src": "images/hero/slider/meadow.jpg",
+      "src": "/portfolio/images/hero/slider/meadow.jpg",
       "icon": "fas fa-volume-up",
       "iconAlt": "Volume up",
       "desc": "Love for old cameras"
     },
     {
-      "src": "images/hero/slider/tea.jpg",
+      "src": "/portfolio/images/hero/slider/tea.jpg",
       "icon": "far fa-sticky-note",
       "iconAlt": "Notes",
       "desc": "Detailed project page"
     },
     {
-      "src": "images/hero/slider/dandelions.jpg",
+      "src": "/portfolio/images/hero/slider/dandelions.jpg",
       "icon": "fas fa-laptop",
       "iconAlt": "Laptop",
       "desc": "YouTube video"
     },
     {
-      "src": "images/hero/slider/forest.jpg",
+      "src": "/portfolio/images/hero/slider/forest.jpg",
       "icon": "fas fa-paperclip",
       "iconAlt": "Paperclip",
       "desc": "Another external link"
     },
     {
-      "src": "images/hero/slider/forest.jpg",
+      "src": "/portfolio/images/hero/slider/forest.jpg",
       "icon": "fas fa-camera-retro",
       "iconAlt": "Camera",
       "desc": "A lightbox image"
     },
     {
-      "src": "images/hero/slider/forest.jpg",
+      "src": "/portfolio/images/hero/slider/forest.jpg",
       "icon": "fas fa-volume-up",
       "iconAlt": "Volume up",
       "desc": "The dark tempest"
@@ -151,7 +151,7 @@
   ],
   "posts": [
     {
-      "src": "images/hero/slider/tea.jpg",
+      "src": "/portfolio/images/hero/slider/tea.jpg",
       "alt": "tea in the morning",
       "title": "The Magic Wheel",
       "info": {
@@ -162,7 +162,7 @@
       "text": "It’s not it to understand them in the objects we’re playing. Products fulfilling a product more innovative, bullets grunts, powerful or stay at every multivariate spacetime point of analysis. People have enormous serial correlation. Good design is derived from so deep and then there’s no other product useful."
     },
     {
-      "src": "images/hero/slider/cornflowers.jpg",
+      "src": "/portfolio/images/hero/slider/cornflowers.jpg",
       "alt": "blue conrflowers",
       "title": "The lonely road",
       "info": {
@@ -173,7 +173,7 @@
       "text": "If you’ve studied design at all, you’ve probably encountered Lorem Ipsum placeholder text at some point. Anywhere there is text, but the meaning of that text isn’t particularly important, you might see Lorem Ipsum."
     },
     {
-      "src": "images/hero/slider/meadow.jpg",
+      "src": "/portfolio/images/hero/slider/meadow.jpg",
       "alt": "yellow meadow",
       "title": "I love gasoline smell",
       "info": {

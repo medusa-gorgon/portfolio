@@ -1,7 +1,7 @@
 module.exports = () => {
   $.gulp.task('images:minify', () => {
     return $.gulp
-      .src(`${$.config.dev}/images/**/*.*`, {
+      .src(`${$.config.dev}/portfolio/images/**/*.*`, {
         since: $.gulp.lastRun('images:minify'),
       })
       .pipe(
@@ -15,6 +15,6 @@ module.exports = () => {
           }),
         ])
       )
-      .pipe($.gulp.dest(`${$.config.dev}/images`));
+      .pipe($.gulp.dest(`${$.config.dev}/portfolio/images`));
   });
 };
