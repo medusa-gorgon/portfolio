@@ -10,9 +10,9 @@ After installation run:
 
 ```bash
 npm install
-```
 
-```bash
+npm install --global gulp-cli
+
 gulp
 ```
 
